@@ -258,7 +258,6 @@ Use flexible layouts, % widths, and `rem` units.
 
 ## Conclusion and Best Practices
 
-* Write semantic HTML
 * Separate content (HTML) from style (CSS)
 * Use external stylesheets
 * Keep CSS organized and modular
