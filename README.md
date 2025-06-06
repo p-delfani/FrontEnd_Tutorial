@@ -275,6 +275,257 @@ Use flexible layouts, % widths, and `rem` units.
 
 
 
+# Mastering Flexbox in CSS: A Complete Guide
+
+## Table of Contents
+
+* [Introduction](#introduction)
+* [What is Flexbox?](#what-is-flexbox)
+* [Why Use Flexbox?](#why-use-flexbox)
+* [The Flex Container](#the-flex-container)
+
+  * [display: flex](#display-flex)
+  * [flex-direction](#flex-direction)
+  * [flex-wrap](#flex-wrap)
+  * [flex-flow](#flex-flow)
+  * [justify-content](#justify-content)
+  * [align-items](#align-items)
+  * [align-content](#align-content)
+* [The Flex Items](#the-flex-items)
+
+  * [order](#order)
+  * [flex-grow](#flex-grow)
+  * [flex-shrink](#flex-shrink)
+  * [flex-basis](#flex-basis)
+  * [flex](#flex)
+  * [align-self](#align-self)
+* [Common Use Cases](#common-use-cases)
+* [Responsive Design with Flexbox](#responsive-design-with-flexbox)
+* [Best Practices](#best-practices)
+* [Conclusion](#conclusion)
+
+---
+
+## Introduction
+
+Flexbox, or the Flexible Box Module, is a powerful CSS layout model that allows developers to design complex layouts with ease. Unlike traditional box models, Flexbox excels in aligning and distributing space among items in a container, especially when the size of the items is unknown or dynamic.
+
+---
+
+## What is Flexbox?
+
+Flexbox is a one-dimensional layout system that arranges items in rows or columns. It simplifies the process of aligning elements, distributing space, and creating responsive interfaces without relying on floats or positioning hacks.
+
+---
+
+## Why Use Flexbox?
+
+* Easy vertical and horizontal centering
+* Control over spacing and alignment
+* Dynamic resizing and reordering
+* Better layout for different screen sizes
+
+---
+
+## The Flex Container
+
+To start using Flexbox, you need to define a flex container:
+
+```css
+.container {
+  display: flex;
+}
+```
+
+All direct children of this container become flex items.
+
+### display: flex
+
+Defines a flex container and enables flex context for all its children.
+
+```css
+display: flex;      /* Default: row */
+display: inline-flex; /* Behaves like inline-block */
+```
+
+### flex-direction
+
+Determines the direction of the main axis (row or column):
+
+```css
+flex-direction: row;        /* Default */
+flex-direction: row-reverse;
+flex-direction: column;
+flex-direction: column-reverse;
+```
+
+### flex-wrap
+
+Controls whether the flex items should wrap or not:
+
+```css
+flex-wrap: nowrap;       /* Default */
+flex-wrap: wrap;
+flex-wrap: wrap-reverse;
+```
+
+### flex-flow
+
+A shorthand for `flex-direction` and `flex-wrap`:
+
+```css
+flex-flow: row wrap;
+```
+
+### justify-content
+
+Aligns items along the main axis:
+
+```css
+justify-content: flex-start;   /* Default */
+justify-content: flex-end;
+justify-content: center;
+justify-content: space-between;
+justify-content: space-around;
+justify-content: space-evenly;
+```
+
+### align-items
+
+Aligns items along the cross axis:
+
+```css
+align-items: stretch;   /* Default */
+align-items: flex-start;
+align-items: flex-end;
+align-items: center;
+align-items: baseline;
+```
+
+### align-content
+
+Aligns multiple rows (when wrapped) along the cross axis:
+
+```css
+align-content: stretch;   /* Default */
+align-content: flex-start;
+align-content: flex-end;
+align-content: center;
+align-content: space-between;
+align-content: space-around;
+```
+
+---
+
+## The Flex Items
+
+### order
+
+Defines the order of flex items:
+
+```css
+.item {
+  order: 2;
+}
+```
+
+### flex-grow
+
+Defines the ability of an item to grow relative to others:
+
+```css
+.item {
+  flex-grow: 1;
+}
+```
+
+### flex-shrink
+
+Defines the ability of an item to shrink relative to others:
+
+```css
+.item {
+  flex-shrink: 1;
+}
+```
+
+### flex-basis
+
+Defines the default size of an item before remaining space is distributed:
+
+```css
+.item {
+  flex-basis: 200px;
+}
+```
+
+### flex
+
+Shorthand for `flex-grow`, `flex-shrink`, and `flex-basis`:
+
+```css
+.item {
+  flex: 1 1 200px;
+}
+```
+
+### align-self
+
+Overrides `align-items` for individual flex items:
+
+```css
+.item {
+  align-self: center;
+}
+```
+
+---
+
+## Common Use Cases
+
+* Centering elements
+* Equal-width columns
+* Responsive navbars
+* Layout with fixed and flexible widths
+
+---
+
+## Responsive Design with Flexbox
+
+Use `flex-wrap`, percentages, and media queries to adapt layout for various screen sizes:
+
+```css
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+}
+```
+
+---
+
+## Best Practices
+
+* Use `flex` shorthand for brevity
+* Avoid overusing `align-self` unless needed
+* Combine Flexbox with media queries for better responsiveness
+* Always test layout on various devices
+
+---
+
+## Conclusion
+
+Flexbox offers a flexible and efficient way to layout, align, and distribute space among items. It's a must-know skill for any modern web developer. Start practicing it in your projects to fully harness its power.
+
+
+
+
+
+
+
+
+
+
 # Task 1 - Personal Profile Website
 
 ## Overview
