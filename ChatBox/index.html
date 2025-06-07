@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Professional Flexbox Chatbox</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="chat-container">
+    <aside class="sidebar">
+      <header>
+        <h2>Chats</h2>
+      </header>
+      <ul class="chat-list">
+        <li class="active" tabindex="0">Alex</li>
+        <li tabindex="0">Jordan</li>
+        <li tabindex="0">Maya</li>
+        <li tabindex="0">Chris</li>
+      </ul>
+    </aside>
+    <main class="chat-window">
+      <header class="chat-header" aria-label="Chat header">
+        <h3>Chat with Alex</h3>
+      </header>
+      <section class="chat-messages" aria-live="polite" aria-relevant="additions">
+        <div class="message sent" tabindex="0">Hey Alex! How are you?</div>
+        <div class="message received" tabindex="0">Hey! I'm great, thanks for asking 😊</div>
+        <div class="message sent" tabindex="0">Working on a professional Flexbox layout.</div>
+      </section>
+      <footer class="chat-input">
+        <input type="text" placeholder="Type your message..." aria-label="Type your message" />
+        <button type="submit" aria-label="Send message">Send</button>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>
