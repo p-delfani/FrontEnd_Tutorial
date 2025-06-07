@@ -554,6 +554,83 @@ project-folder/
 ├── style.css # Custom CSS styles
 └── assets/ # (Optional) Folder for images, icons, etc.
 
+# Task2-FlexBoxProject-Chatbox
 
-## License
-This project is for personal use and educational purposes. No license is attached by default.
+A modern, professional chatbox UI built with **HTML5** and **CSS3** (using **Flexbox**, **CSS Variables**, **Google Fonts**, **Animations**, and **Dark Mode**).  
+Designed for full responsiveness, accessibility, and a polished user experience without any JavaScript.
+
+---
+
+
+---
+
+##  Features
+
+- Fully responsive and mobile-friendly Flexbox layout  
+- Dark mode support via CSS variables and media query  
+- Smooth fade-in animations for chat messages  
+- Google Fonts integration for clean typography  
+- Accessible HTML with proper roles and keyboard focus styles  
+- Custom scrollbar styling for a modern feel  
+- Clean, minimalistic design focused on usability  
+
+---
+
+##  Technologies Used
+
+- HTML5 semantic elements  
+- CSS3 with Flexbox layout  
+- CSS Variables for theming  
+- CSS Animations and transitions  
+- Google Fonts (Inter)  
+- Responsive design with media queries  
+
+---
+
+##  Key CSS Concepts
+
+- `display: flex`, `flex-direction`, `gap` and `flex-grow` for layouts  
+- CSS Variables for easy theming and dark mode support  
+- Pseudo-elements (`::after`) for speech bubble tails  
+- Accessibility enhancements using `tabindex`, `aria-label` and focus styles  
+- Scrollable containers with smooth scrolling and custom scrollbar  
+- Media queries for mobile responsiveness  
+- Animation with `@keyframes` and `animation-delay` for staggered fade-in  
+
+---
+
+## Code Explanation
+
+### index.html
+
+- Uses `<aside>` for sidebar chat list and `<main>` for chat window for semantic clarity  
+- Chat list items are keyboard navigable with `tabindex="0"` and highlight on focus  
+- Chat messages container has `aria-live="polite"` to notify screen readers about new messages  
+- Input has an accessible label via `aria-label`  
+- Buttons have `type="submit"` and proper labels for screen readers  
+
+### styles.css
+
+- Uses CSS variables (`:root`) for colors to enable light/dark theming easily  
+- `chat-container` uses `display: flex` with fixed width and height for desktop, responsive on smaller screens  
+- Sidebar uses vertical flex layout with gap and scroll overflow  
+- Chat window is a vertical flex container with growing message area and fixed header/footer  
+- Messages styled with different colors, aligned left/right via `align-self`  
+- Speech bubble arrow created with `::after` pseudo-elements and CSS borders  
+- Scrollbar is customized for WebKit browsers  
+- Dark mode styles apply via `prefers-color-scheme: dark` media query  
+- Animations fade in messages with delay for a dynamic effect  
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
