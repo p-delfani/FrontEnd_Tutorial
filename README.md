@@ -554,6 +554,12 @@ project-folder/
 ├── style.css # Custom CSS styles
 └── assets/ # (Optional) Folder for images, icons, etc.
 
+
+
+
+
+
+
 # Task2-FlexBoxProject-Chatbox
 
 A modern, professional chatbox UI built with **HTML5** and **CSS3** (using **Flexbox**, **CSS Variables**, **Google Fonts**, **Animations**, and **Dark Mode**).  
