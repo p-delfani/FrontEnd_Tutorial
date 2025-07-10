@@ -1091,7 +1091,7 @@ A Structured Learning Path from Basics to Intermediate
 
 ---
 
-## 📁 Table of Contents
+##  Table of Contents
 
 1. [Introduction to JavaScript](#1)
 2. [JavaScript Syntax and Statements](#2)
@@ -1116,7 +1116,7 @@ A Structured Learning Path from Basics to Intermediate
 
 <a name="1"></a>
 
-## 1. 💡 Introduction to JavaScript
+## 1.  Introduction to JavaScript
 
 JavaScript is a **client-side scripting language** used to make websites interactive. It's **interpreted**, **event-driven**, and supports **object-oriented programming**.
 
@@ -1132,7 +1132,7 @@ JavaScript runs in the browser (Chrome, Firefox, etc.) without the need for comp
 
 <a name="2"></a>
 
-## 2. ✍️ JavaScript Syntax and Statements
+## 2.  JavaScript Syntax and Statements
 
 * JavaScript is **case-sensitive**.
 * Each statement ends with a **semicolon (;)** (optional but recommended).
@@ -1148,7 +1148,7 @@ JavaScript runs in the browser (Chrome, Firefox, etc.) without the need for comp
 
 <a name="3"></a>
 
-## 3. 🫜 Variables and Constants
+## 3.  Variables and Constants
 
 ```js
 let name = "Alice"; // Block-scoped variable
@@ -1162,7 +1162,7 @@ Use `let` and `const` — avoid `var` in modern JS.
 
 <a name="4"></a>
 
-## 4. 📏 Data Types in JavaScript
+## 4.  Data Types in JavaScript
 
 * **Primitive**: `string`, `number`, `boolean`, `undefined`, `null`, `symbol`, `bigint`
 * **Reference**: `object`, `array`, `function`
@@ -1179,7 +1179,7 @@ let e = null;          // null
 
 <a name="5"></a>
 
-## 5. ➕ Operators
+## 5.  Operators
 
 ### Arithmetic: `+`, `-`, `*`, `/`, `%`, `**`
 
@@ -1199,7 +1199,7 @@ let result = age > 18 ? "Adult" : "Minor";
 
 <a name="6"></a>
 
-## 6. 🔀 Conditional Statements
+## 6.  Conditional Statements
 
 ```js
 if (x > 10) {
@@ -1225,7 +1225,7 @@ switch (fruit) {
 
 <a name="7"></a>
 
-## 7. 🔁 Loops
+## 7.  Loops
 
 ```js
 for (let i = 0; i < 5; i++) {
@@ -1252,7 +1252,7 @@ for (let key in obj) console.log(key);
 
 <a name="8"></a>
 
-## 8. 🧹 Functions
+## 8.  Functions
 
 ```js
 function greet(name) {
@@ -1267,7 +1267,7 @@ Functions are **first-class citizens** in JS.
 
 <a name="9"></a>
 
-## 9. 📚 Arrays
+## 9.  Arrays
 
 ```js
 let fruits = ["apple", "banana", "cherry"];
@@ -1281,7 +1281,7 @@ Useful methods: `map()`, `filter()`, `reduce()`, `forEach()`, `includes()`
 
 <a name="10"></a>
 
-## 10. 🧱 Objects
+## 10.  Objects
 
 ```js
 let person = {
@@ -1298,7 +1298,7 @@ person.greet();
 
 <a name="11"></a>
 
-## 11. 🤲 Events
+## 11.  Events
 
 HTML:
 
@@ -1324,7 +1324,7 @@ button.addEventListener("click", sayHello);
 
 <a name="12"></a>
 
-## 12. 🌳 DOM Manipulation
+## 12.  DOM Manipulation
 
 ```js
 document.getElementById("demo").innerText = "Changed!";
@@ -1335,7 +1335,7 @@ document.querySelector(".my-class").style.color = "red";
 
 <a name="13"></a>
 
-## 13. 🌐 JavaScript in the Browser
+## 13.  JavaScript in the Browser
 
 * `window.alert()`
 * `window.location`
@@ -1350,7 +1350,7 @@ localStorage.setItem("name", "Alice");
 
 <a name="14"></a>
 
-## 14. 📝 Forms and Validation
+## 14.  Forms and Validation
 
 ```html
 <form onsubmit="return validateForm()">
@@ -1371,7 +1371,7 @@ function validateForm() {
 
 <a name="15"></a>
 
-## 15. ⚡ ES6+ Features
+## 15.  ES6+ Features
 
 * `let` / `const`
 * Arrow functions
@@ -1395,7 +1395,7 @@ class Animal {
 
 <a name="16"></a>
 
-## 16. 🤞 Debugging and Developer Tools
+## 16.  Debugging and Developer Tools
 
 * `console.log()`
 * Browser DevTools (F12)
@@ -1406,7 +1406,7 @@ class Animal {
 
 <a name="17"></a>
 
-## 17. 🛠️ Error Handling
+## 17.  Error Handling
 
 ```js
 try {
@@ -1422,7 +1422,7 @@ try {
 
 <a name="18"></a>
 
-## 18. ✅ JavaScript Best Practices
+## 18.  JavaScript Best Practices
 
 * Use `const` by default
 * Write descriptive names
