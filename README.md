@@ -1234,6 +1234,197 @@ Use it for small projects, component libraries, or full-scale applications. The 
 ---
 
 
+# 📘 JavaScript: Beginner to Pro Guide
+
+## 📚 Table of Contents
+1. [Introduction](#introduction)
+2. [Variables and Data Types](#variables-and-data-types)
+3. [Operators and Expressions](#operators-and-expressions)
+4. [Conditional Statements](#conditional-statements)
+5. [Loops](#loops)
+6. [Functions](#functions)
+7. [Objects and Object-Oriented Programming](#objects-and-object-oriented-programming)
+8. [Arrays and Array Methods](#arrays-and-array-methods)
+9. [Error Handling](#error-handling)
+10. [DOM Manipulation](#dom-manipulation)
+11. [Event Handling](#event-handling)
+12. [ES6+ Features](#es6-features)
+13. [Asynchronous JavaScript](#asynchronous-javascript)
+14. [Projects and Practice Ideas](#projects-and-practice-ideas)
+
+---
+
+## 🔰 Introduction
+
+JavaScript is the language of the web. It allows you to make websites interactive, dynamic, and smart. Every browser supports JavaScript, making it essential for frontend development—and increasingly for backend too (via Node.js).
+
+---
+
+## 🧮 Variables and Data Types
+
+```js
+let name = "Alice";    // String
+const age = 25;        // Number
+let isActive = true;   // Boolean
+let user = null;       // Null
+let job;               // Undefined
+
+let x = 10;
+let y = 5;
+
+x + y;     // 15
+x > y;     // true
+x === "10" // false (strict equality)
+
+
+if (score > 90) {
+  console.log("Excellent!");
+} else if (score > 60) {
+  console.log("Good");
+} else {
+  console.log("Try again!");
+}
+
+
+for (let i = 0; i < 5; i++) {
+  console.log(i);
+}
+
+let i = 0;
+while (i < 5) {
+  console.log(i);
+  i++;
+}
+
+
+function greet(name) {
+  return `Hello, ${name}`;
+}
+
+const greetArrow = (name) => `Hi, ${name}`;
+
+
+const user = {
+  name: "Jane",
+  age: 22,
+  greet: function() {
+    return `Hi, I'm ${this.name}`;
+  }
+};
+
+console.log(user.greet());
+
+const user = {
+  name: "Jane",
+  age: 22,
+  greet: function() {
+    return `Hi, I'm ${this.name}`;
+  }
+};
+
+console.log(user.greet());
+class Person {
+  constructor(name) {
+    this.name = name;
+  }
+  speak() {
+    return `Hello, I'm ${this.name}`;
+  }
+}
+
+const person1 = new Person("John");
+console.log(person1.speak());
+
+
+let colors = ["red", "green", "blue"];
+
+colors.push("yellow");  // add
+colors.pop();           // remove
+colors.forEach(c => console.log(c));
+let upper = colors.map(c => c.toUpperCase());
+
+
+try {
+  throw new Error("Something broke");
+} catch (e) {
+  console.error(e.message);
+}
+
+DOM Manipulation
+
+<button id="btn">Click Me</button>
+document.getElementById("btn").addEventListener("click", function() {
+  alert("Clicked!");
+});
+
+
+document.querySelector("input").addEventListener("keyup", function(event) {
+  console.log("Typed:", event.target.value);
+});
+ES6 Features
+Arrow functions
+
+Template literals
+
+Destructuring
+
+Spread/rest operators
+
+Classes
+
+let and const
+
+
+const user = { name: "Sam", age: 30 };
+const { name, age } = user;
+console.log(`${name} is ${age}`);
+
+
+ Asynchronous JavaScript
+Callbacks, Promises, Async/Await
+
+fetch("https://api.example.com")
+  .then(res => res.json())
+  .then(data => console.log(data))
+  .catch(err => console.error(err));
+
+// or with async/await
+async function loadData() {
+  try {
+    const res = await fetch("https://api.example.com");
+    const data = await res.json();
+    console.log(data);
+  } catch (e) {
+    console.error(e);
+  }
+}
+
+
+
+Projects and Practice Ideas
+✅ To-Do List
+
+✅ Calculator
+
+✅ Weather App (API)
+
+✅ Quiz Game
+
+✅ Interactive Form Validation
+
+✅ Image Gallery with Filters
+
+✅ Clock & Timer
+
+
+
+ Resources
+W3Schools JavaScript
+
+MDN JavaScript
+
+JavaScript.info
+
 
 
 
