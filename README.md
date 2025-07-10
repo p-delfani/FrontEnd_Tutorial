@@ -522,6 +522,260 @@ Flexbox offers a flexible and efficient way to layout, align, and distribute spa
 
 ---
 
+# Bootstrap: A Complete Professional Guide from Zero to Mastery
+
+## Table of Contents
+
+1. [Introduction](#introduction)
+2. [What is Bootstrap?](#what-is-bootstrap)
+3. [Why Use Bootstrap?](#why-use-bootstrap)
+4. [Installation and Setup](#installation-and-setup)
+5. [Bootstrap Grid System](#bootstrap-grid-system)
+6. [Responsive Design](#responsive-design)
+7. [Typography and Utilities](#typography-and-utilities)
+8. [Components](#components)
+9. [JavaScript Plugins](#javascript-plugins)
+10. [Forms](#forms)
+11. [Helpers and Utilities](#helpers-and-utilities)
+12. [Customization and Theming](#customization-and-theming)
+13. [Best Practices](#best-practices)
+14. [Performance Optimization](#performance-optimization)
+15. [Bootstrap with JavaScript Frameworks](#bootstrap-with-javascript-frameworks)
+16. [Conclusion](#conclusion)
+
+---
+
+## Introduction
+
+Bootstrap is one of the most popular front-end frameworks in the world. Originally developed by Twitter, it provides a powerful and responsive grid system, extensive prebuilt components, and strong JavaScript plugins to accelerate frontend development. This guide covers everything from basic setup to advanced customization and real-world integration.
+
+---
+
+## What is Bootstrap?
+
+Bootstrap is an open-source HTML, CSS, and JavaScript framework designed to simplify the development of responsive, mobile-first websites. It offers a collection of reusable components—buttons, navbars, modals, alerts, and more—and a powerful grid system to layout content efficiently.
+
+---
+
+## Why Use Bootstrap?
+
+* **Speed**: Build responsive websites quickly with pre-designed components.
+* **Consistency**: Maintain visual consistency across all UI elements.
+* **Cross-browser compatibility**: Supports all modern browsers.
+* **Responsiveness**: Mobile-first design philosophy out of the box.
+* **Customizable**: Easy to override and extend.
+
+### Bootstrap vs Tailwind CSS
+
+| Feature            | Bootstrap     | Tailwind CSS       |
+| ------------------ | ------------- | ------------------ |
+| Component-Based    | Yes           | No (Utility-first) |
+| Utility Classes    | Limited       | Extensive          |
+| JavaScript Plugins | Built-in      | Not included       |
+| Theming Support    | Strong (SCSS) | Config-based       |
+| Learning Curve     | Low           | Medium             |
+
+---
+
+## Installation and Setup
+
+### Option 1: CDN (Quick Start)
+
+```html
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+```
+
+### Option 2: Using NPM
+
+```bash
+npm install bootstrap
+```
+
+### Option 3: Manual Download
+
+Download from [https://getbootstrap.com](https://getbootstrap.com) and link `bootstrap.min.css` and `bootstrap.bundle.min.js` in your project.
+
+---
+
+## Bootstrap Grid System
+
+Bootstrap uses a 12-column responsive grid based on flexbox.
+
+```html
+<div class="row">
+  <div class="col-md-6">Half Width</div>
+  <div class="col-md-6">Half Width</div>
+</div>
+```
+
+### Grid Classes
+
+* `.container`, `.container-fluid`
+* `.row`
+* `.col`, `.col-6`, `.col-md-4`, etc.
+
+---
+
+## Responsive Design
+
+Bootstrap provides responsive breakpoints:
+
+| Breakpoint  | Class Prefix   | Screen Width |
+| ----------- | -------------- | ------------ |
+| Extra small | `xs` (default) | <576px       |
+| Small       | `sm`           | ≥576px       |
+| Medium      | `md`           | ≥768px       |
+| Large       | `lg`           | ≥992px       |
+| Extra large | `xl`           | ≥1200px      |
+| XXL         | `xxl`          | ≥1400px      |
+
+Use classes like `d-none d-md-block` or `col-lg-6` to control layout.
+
+---
+
+## Typography and Utilities
+
+Bootstrap offers utilities for typography, spacing, colors, etc.
+
+```html
+<h1 class="display-4 text-primary">Welcome</h1>
+<p class="lead text-muted">This is a subtitle</p>
+```
+
+Utilities include:
+
+* `.text-center`, `.text-uppercase`
+* `.mt-3`, `.mb-4`, `.p-2`
+* `.bg-light`, `.text-danger`
+
+---
+
+## Components
+
+### Common Components
+
+* Buttons: `<button class="btn btn-primary">Click</button>`
+* Alerts: `<div class="alert alert-warning">Warning!</div>`
+* Cards, Modals, Tooltips, Dropdowns, Navs, Pagination, etc.
+
+Each component is highly customizable and ready to use.
+
+---
+
+## JavaScript Plugins
+
+Bootstrap provides built-in JavaScript-powered components:
+
+* **Modals**
+* **Tooltips**
+* **Collapse (accordion, sidebar)**
+* **Carousels**
+* **Toasts**
+
+Example:
+
+```html
+<button data-bs-toggle="modal" data-bs-target="#exampleModal">Open Modal</button>
+```
+
+---
+
+## Forms
+
+Bootstrap enhances form elements with structured layouts and validation styles:
+
+```html
+<form>
+  <div class="mb-3">
+    <label for="email" class="form-label">Email</label>
+    <input type="email" class="form-control" id="email">
+  </div>
+</form>
+```
+
+Supports:
+
+* Form groups, labels, help texts
+* Validation states
+* Input groups and layout grids
+
+---
+
+## Helpers and Utilities
+
+Bootstrap includes helper classes:
+
+* **Display**: `.d-none`, `.d-flex`, `.d-inline-block`
+* **Positioning**: `.position-relative`, `.top-0`, `.start-50`
+* **Sizing**: `.w-100`, `.h-50`
+* **Overflow, shadows, borders, etc.**
+
+---
+
+## Customization and Theming
+
+Bootstrap is fully customizable with SCSS variables.
+
+Steps:
+
+1. Install `sass`
+2. Create custom `_variables.scss`
+3. Import before Bootstrap in your SCSS file
+
+```scss
+$primary: #ff5733;
+@import "bootstrap";
+```
+
+Use tools like Bootstrap Customize or Theming Kits to generate themes.
+
+---
+
+## Best Practices
+
+* Use grid and utility classes for layout
+* Don’t override core classes unless necessary
+* Leverage components before creating custom ones
+* Use semantic HTML structure
+* Use accessibility attributes (`aria-*`) for better UX
+
+---
+
+## Performance Optimization
+
+* Only import required modules when using SCSS
+* Minify CSS/JS for production
+* Defer or lazy-load JS
+* Use PurgeCSS to remove unused classes
+* Leverage CDN caching for faster load times
+
+---
+
+## Bootstrap with JavaScript Frameworks
+
+### React
+
+Use `react-bootstrap` or plain Bootstrap classes
+
+### Angular
+
+Use `ng-bootstrap` or manually integrate with Bootstrap bundle
+
+### Vue
+
+Use `bootstrap-vue` or native classes
+
+Bootstrap is framework-agnostic and works with any front-end ecosystem.
+
+---
+
+## Conclusion
+
+Bootstrap is a battle-tested framework that enables rapid UI development with built-in responsiveness, accessibility, and cross-browser consistency. Whether you're a beginner building a portfolio or a professional crafting a SaaS dashboard, mastering Bootstrap ensures faster delivery and beautiful design without reinventing the wheel.
+
+Customize it, extend it, and use it to build anything from landing pages to full-scale applications.
+
 
 
 
@@ -628,802 +882,6 @@ Designed for full responsiveness, accessibility, and a polished user experience 
 - Animations fade in messages with delay for a dynamic effect  
 
 ---
-
-
-Bootstrap: A Complete Professional Guide from Zero to Mastery
-Table of Contents
-Introduction
-
-What is Bootstrap?
-
-Why Use Bootstrap?
-
-Installation and Setup
-
-Core Concepts and Structure
-
-Grid System
-
-Ready-to-use Components
-
-Utilities in Bootstrap
-
-Forms
-
-Navbar and Navigation
-
-Modals, Tooltips, Accordions, Popovers
-
-JavaScript Essentials in Bootstrap
-
-Theming and Customization with Sass
-
-Dark Mode
-
-Responsive Design
-
-Best Practices
-
-Bootstrap vs Tailwind CSS
-
-Conclusion
-
-Introduction
-Bootstrap is one of the most popular and powerful CSS frameworks available today. Whether you're building a simple website or a large-scale application, Bootstrap provides a responsive, mobile-first approach to front-end development using pre-designed components, utility classes, and powerful JavaScript plugins. This comprehensive guide covers everything from installation to advanced customization.
-
-What is Bootstrap?
-Bootstrap is a free and open-source CSS framework originally developed by Twitter. It helps developers build responsive and mobile-first websites with consistent design patterns. It includes HTML, CSS, and JavaScript components for typography, forms, buttons, navigation, modals, and much more.
-
-Why Use Bootstrap?
-Speed: Build layouts quickly with pre-built classes and components.
-
-Responsiveness: Mobile-first grid system and components out of the box.
-
-Consistency: Unified design system and component behavior.
-
-Extensibility: Customize easily with Sass variables and mixins.
-
-Community & Ecosystem: Large ecosystem of themes, templates, and extensions.
-
-Installation and Setup
-Option 1: Use CDN (Quick Start)
-html
-Copy
-Edit
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-Option 2: Install via NPM
-bash
-Copy
-Edit
-npm install bootstrap
-Import in your main JS or SCSS file:
-
-js
-Copy
-Edit
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-import 'bootstrap/dist/css/bootstrap.min.css';
-Core Concepts and Structure
-Bootstrap provides:
-
-A responsive grid system
-
-Reusable components like buttons, cards, alerts, etc.
-
-Utility classes for spacing, colors, display, and more
-
-JavaScript plugins for interactivity
-
-You write semantic HTML, and apply Bootstrap’s classes to get beautifully styled components.
-
-Grid System
-Bootstrap’s 12-column grid system uses containers, rows, and columns to layout and align content:
-
-html
-Copy
-Edit
-<div class="container">
-  <div class="row">
-    <div class="col-md-6">Left</div>
-    <div class="col-md-6">Right</div>
-  </div>
-</div>
-Breakpoints available: col-sm-, col-md-, col-lg-, col-xl-, and col-xxl-.
-
-Ready-to-use Components
-Bootstrap provides dozens of pre-designed components:
-
-Buttons
-html
-Copy
-Edit
-<button class="btn btn-primary">Primary Button</button>
-Cards
-html
-Copy
-Edit
-<div class="card">
-  <div class="card-body">Card Content</div>
-</div>
-Other components include:
-
-Alerts
-
-Badges
-
-Breadcrumbs
-
-Spinners
-
-Pagination
-
-Tabs
-
-Toasts
-
-Utilities in Bootstrap
-Utility classes allow for rapid styling without custom CSS:
-
-Spacing: m-3, p-4, mb-5
-
-Colors: bg-primary, text-danger
-
-Display: d-flex, d-none, d-inline
-
-Alignment: text-center, justify-content-between
-
-Borders and Radius: border, rounded, border-0
-
-Forms
-Bootstrap includes beautifully styled form elements:
-
-html
-Copy
-Edit
-<form>
-  <div class="mb-3">
-    <label for="email" class="form-label">Email address</label>
-    <input type="email" class="form-control" id="email">
-  </div>
-  <button class="btn btn-success">Submit</button>
-</form>
-Supports custom checkboxes, radios, switches, validation states, floating labels, and more.
-
-Navbar and Navigation
-Create responsive menus with the navbar component:
-
-html
-Copy
-Edit
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Logo</a>
-</nav>
-You can easily add:
-
-Collapsible menus
-
-Dropdowns
-
-Branding and links
-
-Search bars
-
-Modals, Tooltips, Accordions, Popovers
-Interactive UI elements powered by Bootstrap’s JavaScript:
-
-Modal
-html
-Copy
-Edit
-<button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
-  Open Modal
-</button>
-
-<div class="modal fade" id="myModal">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-body">Modal content here</div>
-    </div>
-  </div>
-</div>
-Other interactive elements:
-
-data-bs-toggle="tooltip"
-
-Accordions with .accordion
-
-Popovers with data-bs-toggle="popover"
-
-JavaScript Essentials in Bootstrap
-As of Bootstrap 5, all JS plugins use Vanilla JavaScript, no jQuery needed.
-
-Example: Tooltip Initialization
-js
-Copy
-Edit
-const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
-tooltipTriggerList.forEach(el => new bootstrap.Tooltip(el));
-JavaScript-based components include:
-
-Collapse
-
-Dropdowns
-
-Offcanvas
-
-Toasts
-
-ScrollSpy
-
-Theming and Customization with Sass
-Bootstrap is fully customizable using Sass variables:
-
-scss
-Copy
-Edit
-$primary: #1abc9c;
-$font-family-base: 'Inter', sans-serif;
-Compile your custom Bootstrap build with tools like:
-
-Webpack
-
-Vite
-
-Laravel Mix
-
-Dark Mode
-Bootstrap doesn’t have built-in dark mode toggling, but you can create dark themes using:
-
-html
-Copy
-Edit
-<body class="bg-dark text-light">
-Or define custom themes via Sass and toggle classes dynamically with JavaScript.
-
-Responsive Design
-Bootstrap is mobile-first and uses responsive classes for layout and content:
-
-html
-Copy
-Edit
-<div class="text-center text-lg-start">
-  Responsive content
-</div>
-Breakpoint prefixes:
-
-sm: (≥576px)
-
-md: (≥768px)
-
-lg: (≥992px)
-
-xl: (≥1200px)
-
-xxl: (≥1400px)
-
-Best Practices
-Use semantic HTML with Bootstrap classes
-
-Avoid unnecessary nesting for clean markup
-
-Combine utility classes for quick custom layouts
-
-Customize your Bootstrap build for performance
-
-Use the bundled JS (bootstrap.bundle.js) to avoid missing dependencies
-
-Bootstrap vs Tailwind CSS
-Feature	Bootstrap	Tailwind CSS
-Component Library	Built-in	Not included (separate kits)
-Customization	Sass variables	Tailwind config + theme()
-Syntax	High-level classes	Low-level utility classes
-Learning Curve	Easier for beginners	Requires utility-first mindset
-Design Speed	Fast for MVPs and admin UIs	Fast for fully custom designs
-File Size	Larger (before optimization)	Smaller (JIT compilation)
-
-Conclusion
-Bootstrap remains one of the most trusted and widely adopted CSS frameworks. With responsive design baked in, powerful components, and customizable Sass-based theming, Bootstrap is ideal for developers who want to build consistent, scalable, and beautiful UIs—fast.
-
-Whether you’re building a prototype, dashboard, corporate site, or full app, Bootstrap has everything you need to ship interfaces quickly with minimal friction. And with the growing flexibility in Bootstrap 5+, it fits beautifully into modern development workflows.
-
-
-
-
-# Tailwind CSS: A Complete Professional Guide from Zero to Mastery
-
-## Table of Contents
-
-1. [Introduction](#introduction)
-2. [What is Tailwind CSS?](#what-is-tailwind-css)
-3. [Why Use Tailwind?](#why-use-tailwind)
-4. [Installation and Setup](#installation-and-setup)
-5. [Tailwind CSS Fundamentals](#tailwind-css-fundamentals)
-6. [Utility-First Philosophy](#utility-first-philosophy)
-7. [Responsive Design](#responsive-design)
-8. [Layout and Spacing](#layout-and-spacing)
-9. [Typography and Color System](#typography-and-color-system)
-10. [Flexbox and Grid](#flexbox-and-grid)
-11. [Dark Mode](#dark-mode)
-12. [State Variants](#state-variants)
-13. [Reusability with @apply and Components](#reusability-with-apply-and-components)
-14. [Customizing Tailwind Configuration](#customizing-tailwind-configuration)
-15. [Transitions and Animations](#transitions-and-animations)
-16. [Best Practices](#best-practices)
-17. [Tailwind + JavaScript Integration](#tailwind--javascript-integration)
-18. [Conclusion](#conclusion)
-
----
-
-## Introduction
-
-Tailwind CSS is a utility-first CSS framework for rapidly building modern and responsive websites. Unlike traditional CSS frameworks that rely on prebuilt components, Tailwind provides low-level utility classes to create custom designs with ease and flexibility.
-
----
-
-## What is Tailwind CSS?
-
-Tailwind is a CSS framework that promotes a utility-first approach. It means you can style your elements directly in HTML using classes like `p-4`, `text-lg`, or `bg-blue-500` without writing custom CSS for each component.
-
----
-
-## Why Use Tailwind?
-
-* **Faster development**
-* **Responsive and mobile-first by default**
-* **Highly customizable**
-* **Minimal CSS output**
-* **Great developer experience with autocomplete and plugins**
-
----
-
-## Installation and Setup
-
-### Option 1: CDN (for prototyping)
-
-```html
-<script src="https://cdn.tailwindcss.com"></script>
-```
-
-### Option 2: Full Installation with NPM
-
-```bash
-npm install -D tailwindcss
-npx tailwindcss init
-```
-
-### Configure Tailwind
-
-```js
-// tailwind.config.js
-module.exports = {
-  content: ["./src/**/*.{html,js}"],
-  theme: { extend: {} },
-  plugins: [],
-};
-```
-
-### CSS File
-
-```css
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-```
-
-### Build CSS
-
-```bash
-npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
-```
-
----
-
-## Tailwind CSS Fundamentals
-
-Tailwind offers utility classes for:
-
-* Spacing (margin/padding)
-* Typography
-* Layout (flex, grid, display)
-* Sizing (width, height)
-* Borders, shadows, z-index
-* Transitions, animations
-
----
-
-## Utility-First Philosophy
-
-Build UIs without leaving your HTML:
-
-```html
-<div class="bg-white text-gray-800 p-4 rounded shadow">
-  Welcome to Tailwind!
-</div>
-```
-
----
-
-## Responsive Design
-
-Tailwind uses mobile-first breakpoints with class prefixes:
-
-* `sm:` – 640px
-* `md:` – 768px
-* `lg:` – 1024px
-* `xl:` – 1280px
-* `2xl:` – 1536px
-
-```html
-<h1 class="text-xl md:text-3xl lg:text-5xl">Responsive Heading</h1>
-```
-
----
-
-## Layout and Spacing
-
-```html
-<div class="max-w-md mx-auto p-6 bg-gray-100">
-  Card content
-</div>
-```
-
-Common spacing classes:
-
-* `p-4`, `pt-2`, `px-6`
-* `m-4`, `mt-8`, `mx-auto`
-
----
-
-## Typography and Color System
-
-```html
-<p class="text-base text-gray-600">This is body text</p>
-<h2 class="text-2xl font-semibold text-indigo-700">Section Title</h2>
-```
-
-Customize fonts and colors in `tailwind.config.js`.
-
----
-
-## Flexbox and Grid
-
-### Flexbox
-
-```html
-<div class="flex justify-between items-center">
-  <span>Left</span>
-  <span>Right</span>
-</div>
-```
-
-### Grid
-
-```html
-<div class="grid grid-cols-3 gap-4">
-  <div>1</div><div>2</div><div>3</div>
-</div>
-```
-
----
-
-## Dark Mode
-
-Enable in config:
-
-```js
-darkMode: 'class',
-```
-
-Usage:
-
-```html
-<div class="bg-white dark:bg-gray-900 text-black dark:text-white">
-  Dark mode aware
-</div>
-```
-
----
-
-## State Variants
-
-Control interactions:
-
-```html
-<button class="bg-blue-500 hover:bg-blue-600 focus:ring-2">Click me</button>
-```
-
-Variants include:
-
-* `hover:`
-* `focus:`
-* `active:`
-* `disabled:`
-
----
-
-## Reusability with @apply and Components
-
-Avoid repeating utility classes:
-
-```css
-/* styles.css */
-.btn-primary {
-  @apply bg-blue-600 text-white px-4 py-2 rounded;
-}
-```
-
-Usage:
-
-```html
-<button class="btn-primary">Save</button>
-```
-
----
-
-## Customizing Tailwind Configuration
-
-Extend your theme:
-
-```js
-module.exports = {
-  theme: {
-    extend: {
-      colors: {
-        brand: '#1DA1F2',
-      },
-      spacing: {
-        '72': '18rem',
-        '84': '21rem',
-      },
-    },
-  },
-}
-```
-
----
-
-## Transitions and Animations
-
-```html
-<div class="transition-transform duration-300 ease-in-out hover:scale-105">
-  Hover me
-</div>
-```
-
-Built-in animations:
-
-* `animate-bounce`
-* `animate-ping`
-* `animate-spin`
-
----
-
-## Best Practices
-
-* Use semantic HTML with Tailwind
-* Limit inline class clutter with components
-* Use `content` config to purge unused classes
-* Enable JIT mode for better performance
-* Organize custom utilities in layers
-
----
-
-## Tailwind + JavaScript Integration
-
-Toggle classes dynamically:
-
-```js
-document.getElementById('menu').classList.toggle('hidden');
-```
-
-Or use frameworks like:
-
-* React + Tailwind
-* Vue + Tailwind
-* Alpine.js (ideal for small interactive components)
-
----
-
-## Conclusion
-
-Tailwind CSS modernizes frontend development with a utility-first mindset. It's fast, flexible, and powerful — enabling developers to prototype and build production-grade UIs efficiently. Mastery of Tailwind leads to cleaner code, better responsiveness, and scalable design systems.
-
-Use it for small projects, component libraries, or full-scale applications. The more you build, the more you’ll appreciate Tailwind's power.
-
----
-
-
-# 📘 JavaScript: Beginner to Pro Guide
-
-## 📚 Table of Contents
-1. [Introduction](#introduction)
-2. [Variables and Data Types](#variables-and-data-types)
-3. [Operators and Expressions](#operators-and-expressions)
-4. [Conditional Statements](#conditional-statements)
-5. [Loops](#loops)
-6. [Functions](#functions)
-7. [Objects and Object-Oriented Programming](#objects-and-object-oriented-programming)
-8. [Arrays and Array Methods](#arrays-and-array-methods)
-9. [Error Handling](#error-handling)
-10. [DOM Manipulation](#dom-manipulation)
-11. [Event Handling](#event-handling)
-12. [ES6+ Features](#es6-features)
-13. [Asynchronous JavaScript](#asynchronous-javascript)
-14. [Projects and Practice Ideas](#projects-and-practice-ideas)
-
----
-
-## 🔰 Introduction
-
-JavaScript is the language of the web. It allows you to make websites interactive, dynamic, and smart. Every browser supports JavaScript, making it essential for frontend development—and increasingly for backend too (via Node.js).
-
----
-
-## 🧮 Variables and Data Types
-
-```js
-let name = "Alice";    // String
-const age = 25;        // Number
-let isActive = true;   // Boolean
-let user = null;       // Null
-let job;               // Undefined
-
-let x = 10;
-let y = 5;
-
-x + y;     // 15
-x > y;     // true
-x === "10" // false (strict equality)
-
-
-if (score > 90) {
-  console.log("Excellent!");
-} else if (score > 60) {
-  console.log("Good");
-} else {
-  console.log("Try again!");
-}
-
-
-for (let i = 0; i < 5; i++) {
-  console.log(i);
-}
-
-let i = 0;
-while (i < 5) {
-  console.log(i);
-  i++;
-}
-
-
-function greet(name) {
-  return `Hello, ${name}`;
-}
-
-const greetArrow = (name) => `Hi, ${name}`;
-
-
-const user = {
-  name: "Jane",
-  age: 22,
-  greet: function() {
-    return `Hi, I'm ${this.name}`;
-  }
-};
-
-console.log(user.greet());
-
-const user = {
-  name: "Jane",
-  age: 22,
-  greet: function() {
-    return `Hi, I'm ${this.name}`;
-  }
-};
-
-console.log(user.greet());
-class Person {
-  constructor(name) {
-    this.name = name;
-  }
-  speak() {
-    return `Hello, I'm ${this.name}`;
-  }
-}
-
-const person1 = new Person("John");
-console.log(person1.speak());
-
-
-let colors = ["red", "green", "blue"];
-
-colors.push("yellow");  // add
-colors.pop();           // remove
-colors.forEach(c => console.log(c));
-let upper = colors.map(c => c.toUpperCase());
-
-
-try {
-  throw new Error("Something broke");
-} catch (e) {
-  console.error(e.message);
-}
-
-DOM Manipulation
-
-<button id="btn">Click Me</button>
-document.getElementById("btn").addEventListener("click", function() {
-  alert("Clicked!");
-});
-
-
-document.querySelector("input").addEventListener("keyup", function(event) {
-  console.log("Typed:", event.target.value);
-});
-ES6 Features
-Arrow functions
-
-Template literals
-
-Destructuring
-
-Spread/rest operators
-
-Classes
-
-let and const
-
-
-const user = { name: "Sam", age: 30 };
-const { name, age } = user;
-console.log(`${name} is ${age}`);
-
-
- Asynchronous JavaScript
-Callbacks, Promises, Async/Await
-
-fetch("https://api.example.com")
-  .then(res => res.json())
-  .then(data => console.log(data))
-  .catch(err => console.error(err));
-
-// or with async/await
-async function loadData() {
-  try {
-    const res = await fetch("https://api.example.com");
-    const data = await res.json();
-    console.log(data);
-  } catch (e) {
-    console.error(e);
-  }
-}
-
-
-
-Projects and Practice Ideas
-✅ To-Do List
-
-✅ Calculator
-
-✅ Weather App (API)
-
-✅ Quiz Game
-
-✅ Interactive Form Validation
-
-✅ Image Gallery with Filters
-
-✅ Clock & Timer
-
-
-
- Resources
-W3Schools JavaScript
-
-MDN JavaScript
-
-JavaScript.info
 
 
 
