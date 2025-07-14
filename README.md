@@ -1678,9 +1678,397 @@ try {
 
 
 
+# Complete React Guide
 
+React is one of the most popular JavaScript libraries for building user interfaces, especially for single-page applications. This guide provides a structured walkthrough of React fundamentals with detailed code examples and explanations.
 
+---
 
+## Table of Contents
+
+1. [Introduction to React](#1-introduction-to-react)
+2. [Installing and Setting Up React](#2-installing-and-setting-up-react)
+3. [What is JSX?](#3-what-is-jsx)
+4. [Components](#4-components)
+5. [Props](#5-props)
+6. [State](#6-state)
+7. [Handling Events](#7-handling-events)
+8. [Hooks](#8-hooks)
+
+   * [useState](#usestate)
+   * [useEffect](#useeffect)
+   * [useContext](#usecontext)
+   * [useReducer](#usereducer)
+9. [Conditional Rendering](#9-conditional-rendering)
+10. [Lists and Keys](#10-lists-and-keys)
+11. [Forms](#11-forms)
+12. [Styling](#12-styling)
+13. [React Router](#13-react-router)
+14. [Context API](#14-context-api)
+15. [Practical Example: ToDo App](#15-practical-example-todo-app)
+16. [Additional Resources](#16-additional-resources)
+
+---
+
+## 1. Introduction to React
+
+React is a JavaScript library created by Facebook for building fast and interactive user interfaces. It uses a component-based architecture, which makes the code reusable and easier to manage. React focuses only on the view layer (the "V" in MVC).
+
+### Key Features
+
+* Virtual DOM for efficient rendering
+* Reusable components
+* Unidirectional data flow
+* Hooks for state and lifecycle management
+
+---
+
+## 2. Installing and Setting Up React
+
+### Using Create React App (CRA)
+
+Create React App is an officially supported way to create single-page React applications.
+
+```bash
+npx create-react-app my-app
+cd my-app
+npm start
+```
+
+This sets up a fully working React environment with Webpack, Babel, ESLint, and more.
+
+### Manual Setup (Advanced Users)
+
+You can also configure React manually using tools like Vite, Webpack, or Parcel.
+
+```bash
+npm init vite@latest my-app -- --template react
+cd my-app
+npm install
+npm run dev
+```
+
+---
+
+## 3. What is JSX?
+
+JSX (JavaScript XML) is a syntax extension for JavaScript that allows you to write HTML-like code inside React components. JSX makes the code more readable and easier to write.
+
+```jsx
+const greeting = <h1>Hello, React!</h1>;
+```
+
+Under the hood, JSX gets compiled to:
+
+```js
+const greeting = React.createElement('h1', null, 'Hello, React!');
+```
+
+---
+
+## 4. Components
+
+Components are the building blocks of a React application. They can be either functional or class-based.
+
+### Functional Component
+
+```jsx
+function Welcome(props) {
+  return <h1>Hello, {props.name}</h1>;
+}
+```
+
+### Class Component
+
+```jsx
+class Welcome extends React.Component {
+  render() {
+    return <h1>Hello, {this.props.name}</h1>;
+  }
+}
+```
+
+Components can be nested and reused throughout the app.
+
+---
+
+## 5. Props
+
+Props (short for properties) are used to pass data from parent to child components. They are immutable in the child component.
+
+```jsx
+function User(props) {
+  return <h2>Welcome, {props.username}</h2>;
+}
+
+<User username="Alice" />
+```
+
+---
+
+## 6. State
+
+State is a built-in object that stores property values that belong to the component. When the state changes, the component re-renders.
+
+```jsx
+import { useState } from 'react';
+
+function Counter() {
+  const [count, setCount] = useState(0);
+
+  return (
+    <div>
+      <p>Count: {count}</p>
+      <button onClick={() => setCount(count + 1)}>Increase</button>
+    </div>
+  );
+}
+```
+
+---
+
+## 7. Handling Events
+
+React handles events similarly to DOM events, but with camelCase syntax and passing functions instead of strings.
+
+```jsx
+function Clicker() {
+  const handleClick = () => alert("Button clicked!");
+
+  return <button onClick={handleClick}>Click Me</button>;
+}
+```
+
+---
+
+## 8. Hooks
+
+Hooks let you use state and other React features without writing a class.
+
+### useState
+
+```jsx
+const [name, setName] = useState('John');
+```
+
+### useEffect
+
+Used to run side effects such as fetching data or updating the DOM.
+
+```jsx
+useEffect(() => {
+  document.title = `Clicked ${count} times`;
+}, [count]);
+```
+
+### useContext
+
+Shares state between components without prop drilling.
+
+```jsx
+const ThemeContext = React.createContext();
+
+function App() {
+  return (
+    <ThemeContext.Provider value="dark">
+      <Toolbar />
+    </ThemeContext.Provider>
+  );
+}
+
+function Toolbar() {
+  const theme = useContext(ThemeContext);
+  return <div className={theme}>Toolbar</div>;
+}
+```
+
+### useReducer
+
+An alternative to useState for complex state logic.
+
+```jsx
+const reducer = (state, action) => {
+  switch (action.type) {
+    case 'increment': return { count: state.count + 1 };
+    default: return state;
+  }
+};
+
+const [state, dispatch] = useReducer(reducer, { count: 0 });
+```
+
+---
+
+## 9. Conditional Rendering
+
+Render elements based on conditions:
+
+```jsx
+{isLoggedIn ? <Logout /> : <Login />}
+```
+
+---
+
+## 10. Lists and Keys
+
+Use `map()` to render dynamic lists. Each item needs a unique `key` prop.
+
+```jsx
+const items = ['Apple', 'Banana', 'Cherry'];
+
+<ul>
+  {items.map((item, index) => (
+    <li key={index}>{item}</li>
+  ))}
+</ul>
+```
+
+---
+
+## 11. Forms
+
+React uses controlled components where form input is tied to state.
+
+```jsx
+function Form() {
+  const [value, setValue] = useState('');
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    alert(value);
+  };
+
+  return (
+    <form onSubmit={handleSubmit}>
+      <input value={value} onChange={e => setValue(e.target.value)} />
+      <button>Submit</button>
+    </form>
+  );
+}
+```
+
+---
+
+## 12. Styling
+
+### Inline Styles
+
+```jsx
+const style = {
+  color: 'blue',
+  padding: '10px'
+};
+
+<div style={style}>Styled Text</div>
+```
+
+### CSS Modules
+
+```jsx
+import styles from './App.module.css';
+<div className={styles.container}></div>
+```
+
+---
+
+## 13. React Router
+
+React Router is a library for navigating in React apps.
+
+```bash
+npm install react-router-dom
+```
+
+```jsx
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Link
+} from 'react-router-dom';
+
+function App() {
+  return (
+    <Router>
+      <nav>
+        <Link to="/">Home</Link>
+        <Link to="/about">About</Link>
+      </nav>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+    </Router>
+  );
+}
+```
+
+---
+
+## 14. Context API
+
+Context lets you pass data through the component tree without props.
+
+```jsx
+const UserContext = React.createContext();
+
+function App() {
+  const user = { name: 'John' };
+  return (
+    <UserContext.Provider value={user}>
+      <Profile />
+    </UserContext.Provider>
+  );
+}
+
+function Profile() {
+  const user = useContext(UserContext);
+  return <h1>{user.name}</h1>;
+}
+```
+
+---
+
+## 15. Practical Example: ToDo App
+
+```jsx
+import React, { useState } from 'react';
+
+function TodoApp() {
+  const [todos, setTodos] = useState([]);
+  const [input, setInput] = useState('');
+
+  const addTodo = () => {
+    if (!input) return;
+    setTodos([...todos, input]);
+    setInput('');
+  };
+
+  return (
+    <div>
+      <h2>ToDo App</h2>
+      <input value={input} onChange={(e) => setInput(e.target.value)} />
+      <button onClick={addTodo}>Add</button>
+      <ul>
+        {todos.map((todo, i) => (
+          <li key={i}>{todo}</li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+```
+
+---
+
+## 16. Additional Resources
+
+* [React Official Docs](https://reactjs.org/docs/getting-started.html)
+* [React Router Docs](https://reactrouter.com/)
+* [React Hooks Reference](https://reactjs.org/docs/hooks-reference.html)
+* [Vite for React](https://vitejs.dev/guide/)
+
+---
 
 # Task 1 - Personal Profile Website
 
