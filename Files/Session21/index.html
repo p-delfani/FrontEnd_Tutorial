@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  
+    <div class="container">
+        <h2>Todo App</h2>
+        <div class="input-section">
+            <input type="text" placeholder="Add todo ..." id="task-input">
+            <input type="date"  id="date-input">
+            <button id="add-button">Add</button>
+            <button id="edit-button">Edit</button>
+        </div>
+
+        
+        <div class="todos-operator">
+            <div>
+                <button class="filter-todos" data-filter="all" >All</button>
+                <button class="filter-todos" data-filter="pending">Pending</button>
+                <button class="filter-todos" data-filter="Completed">Completed</button>
+            </div>
+              <button id="delete-all-button">
+               Delete All
+              </button>
+        </div>
+
+      
+    </div>
+    <div id="alert-message">
+    </div>
+    <div class="table">
+        <table>
+            <thead>
+                <tr>
+                    <th>Task</th>
+                    <th>Date</th>
+                    <th>status</th>
+                    <th>Actions </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>text</td>
+                    <td>date</td>
+                    <td>pending</td>
+                    <td>
+                        <button>Edit</button>
+                        <button>Do</button>
+                        <button>Delete</button>
+                    </td>
+                </tr>
+                 <tr>
+                    <td>text</td>
+                    <td>date</td>
+                    <td>pending</td>
+                    <td>
+                        <button>Edit</button>
+                        <button>Do</button>
+                        <button>Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Botostart JS Project</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+
+    <header>
+      <p>BotoStart.ir | Product Page</p>
+    </header>
+
+    <main>
+      <div id="serach">
+        <input type="text" name="" id="search-input" placeholder="Search Name">
+
+        <div>
+          <button class="filter selected" data-filter = "all">All</button>
+          <button class="filter" data-filter = "tech">Teach</button>
+          <button class="filter" data-filter = "clothing">Clothing</button>
+          <button class="filter" data-filter = "health">Health</button>
+        </div>
+
+        <div id="search-price">
+          <input type="number" placeholder="Search Price">
+          <button>Search</button>
+        </div>
+      </div>
+
+      <div id="product">
+        <div class="product-item" data-category = "tech">
+          <img src="./img/iphone.png" alt="">
+          <p>Apple Iphone 14 Pro</p>
+          <span>$ 1499</span>
+        </div>
+
+        <div class="product-item" data-category="clothing">
+          <img src="./img/bag.png" alt="">
+          <p>Trip Bag</p>
+          <span>$ 450</span>
+        </div>
+
+        <div class="product-item" data-category="tech">
+          <img src="./img/airpods.png" alt="">
+          <p>AirPods</p>
+          <span>$ 800</span>
+        </div>
+
+        <div class="product-item" data-category="health">
+          <img src="./img/cream.png" alt="">
+          <p>Cream</p>
+          <span>$ 550</span>
+        </div>
+
+        <div class="product-item" data-category="clothing">
+          <img src="./img/jacket.png" alt="">
+          <p>Jacket</p>
+          <span>$ 460</span>
+        </div>
+
+        <div class="product-item" data-category="health">
+          <img src="./img/shampoo.png" alt="">
+          <p>Shampoo</p>
+          <span>$ 20</span>
+        </div>
+
+        <div class="product-item" data-category="health">
+          <img src="./img/vitamin.png" alt="">
+          <p>Vitamins</p>
+          <span>$ 10</span>
+        </div>
+
+        <div class="product-item" data-category="clothing">
+          <img src="./img/shoes.png" alt="">
+          <p>Shoes</p>
+          <span>$ 1499</span>
+        </div>
+
+        <div class="product-item" data-category="tech">
+          <img src="./img/watch.png" alt="">
+          <p>Watch</p>
+          <span>$ 1499</span>
+        </div>
+      </div>
+      
+    </main>
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>
