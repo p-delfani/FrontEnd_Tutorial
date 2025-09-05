@@ -1,0 +1,363 @@
+/*:root {
+  --color-primary: #4d0de5;
+  --color-secondary: #7da1f7;
+  --color-warning: #fae362;
+  --color-error: #f75e4b;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  max-width: 1200px;
+  margin: auto;
+}
+
+#Search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0 200px;
+  border-radius: 0 0 40px 40px;
+  background: linear-gradient(
+    13deg,
+    var(--color-primary) 47%,
+    var(--color-secondary) 100%
+  );
+  box-shadow: var(--color-secondary) 0px 20px 100px 0px;
+}
+
+
+#Location{
+  width: 45px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: all 0.1s ease-in;
+}
+
+#Location:hover{
+  transform: scale(1.3);
+}
+
+#Search input{
+  width: 300px;
+  height: 35px;
+  border: none;
+  padding: 10px;
+  color: var(--color-primary);
+  font-size: 0.9rem;
+  border-radius: 10px 0 0 10px;
+}
+
+#Search input:focus{
+  outline: none;
+}
+
+#Search button{
+  border: none;
+  background-color: var(--color-warning);
+  height: 35px;
+  padding: 10px;
+  border-radius: 0 10px 10px 0;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.1s ease-in;
+}
+
+#Search button:hover{
+  color: var(--color-primary);
+}
+
+
+#weather{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  width: 500px;
+  min-height: 200px;
+  margin: auto;
+  margin-bottom: 50px;
+  position: relative;
+  bottom: 80px;
+  padding: 30px;
+  border-radius: 30px;
+  box-shadow: var(--color-secondary) 0px 25px 80px -25px;
+
+}
+
+#weather h1{
+  color: var(--color-primary);
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+#weather #main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px; 
+}
+
+#weather #main span{
+  margin: 0 30px 0 10px;
+  color: grey;
+}
+
+#weather #info{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#weather #info span{
+  color: var(--color-secondary);
+  margin-left: 5px;
+}
+
+
+#forecast{
+  display: flex;
+  justify-content: center;
+}
+
+#forecast div{
+  width : 150px;
+  padding: 20px 10px 30px;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: var(--color-secondary) 0px 25px 80px -25px;
+}
+
+#forecast h3{
+  color: var(--color-primary);
+  margin-bottom: 30px;
+}
+
+#forecast p{
+  margin-bottom: 10px;
+
+}
+
+#forecast span{
+  color: var(--color-secondary);
+}
+*/
+
+
+:root {
+  --color-primary: #ff6b6b;
+  --color-secondary: #4facfe;
+  --color-accent: #feca57;
+  --color-bg: #0b0c10;           /* پس‌زمینه مشکی تاریک */
+  --color-card: rgba(255, 255, 255, 0.05);
+  --color-text: #f8fafc;
+  --radius: 20px;
+  --shadow: 0 10px 40px rgba(0, 0, 0, 0.7);
+}
+
+/* بدنه */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #000000, #0a0a0a, #0f0f0f);
+  color: var(--color-text);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* جستجو و لوکیشن */
+#Search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin: 40px 0;
+}
+
+#Search input {
+  padding: 12px 20px;
+  border: none;
+  border-radius: var(--radius);
+  outline: none;
+  font-size: 1rem;
+  width: 280px;
+  background: var(--color-card);
+  color: var(--color-text);
+  backdrop-filter: blur(12px);
+  box-shadow: var(--shadow);
+}
+
+#Search button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: var(--radius);
+  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: var(--shadow);
+  transition: all 0.3s ease;
+}
+
+#Search button:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 12px 45px rgba(0,0,0,0.7);
+}
+
+/* آیکن لوکیشن */
+#Location {
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  filter: brightness(100) saturate(100%); /* کاملاً سفید */
+  transition: transform 0.2s ease;
+}
+
+#Location:hover {
+  transform: scale(1.3);
+}
+
+#weather {
+  background: rgba(221, 221, 221, 0.05); /* شیشه‌ای */
+  backdrop-filter: blur(25px);
+  border-radius: 25px;
+  padding: 30px 25px;
+  margin: 20px 0;
+  text-align: center;
+  box-shadow: 0 10px 50px rgba(0, 0, 0, 0.7);
+  width: 360px;
+  animation: fadeIn 0.8s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+/* نام شهر و کشور */
+#weather h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+  background: linear-gradient(45deg, #ff6b6b, #4facfe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* بخش اصلی: آیکن + وضعیت + دما */
+#weather #main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+#weather #main img {
+  width: 120px; /* آیکن بزرگتر و مشخص */
+}
+
+#weather #main span {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #feca57; /* رنگ جذاب برای وضعیت آب و هوا */
+}
+
+#weather #main p {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 5px 0;
+  background: linear-gradient(45deg, #ff6b6b, #4facfe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* اطلاعات تکمیلی: رطوبت و سرعت باد */
+#weather #info {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  font-size: 1rem;
+  color: #cbd5e1;
+  gap: 15px;
+}
+
+#weather #info p {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#weather #info span {
+  font-weight: 600;
+  color: #4facfe; /* رنگ جذاب برای عددها */
+}
+
+/* پیش‌بینی هوا */
+#forecast {
+  display: flex;
+  justify-content: center;  /* کارت‌ها وسط چین */
+  flex-wrap: wrap;          /* خط جدید برای کارت‌های اضافی */
+  gap: 20px;
+  padding: 20px 5px;
+  width: 95%;
+}
+
+#forecast div {
+  flex: 0 0 160px;
+  background: var(--color-card);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: var(--radius);
+  text-align: center;
+  padding: 20px;
+  box-shadow: var(--shadow);
+  transition: all 0.3s ease;
+  color: var(--color-text);
+}
+
+#forecast div:hover {
+  transform: translateY(-8px) scale(1.05);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+#forecast img {
+  width: 70px;
+  margin-bottom: 10px;
+}
+
+#forecast h3 {
+  font-size: 1rem;
+  margin: 8px 0;
+  font-weight: bold;
+  color: var(--color-accent);
+}
+
+#forecast p {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 6px 0;
+  background: linear-gradient(45deg, var(--color-primary), var(--color-secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#forecast span {
+  font-size: 0.9rem;
+  color: #e2e8f0;
+}
+
+/* انیمیشن */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
