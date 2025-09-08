@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Impact;
+}
+.flex-container,
+.flex-item {
+    /* border-radius: 0.2rem; */
+}
+.flex-container {
+    width: 50rem;
+    height: 45rem;
+    background-color: rgb(108, 190, 223);
+    /* padding: 1rem; */
+    margin: 2rem auto;
+    display: flex;
+    align-items: center;
+}
+
+.flex-item {
+    width: 7rem;
+    height: 6rem;
+    background-color: rgb(240 236 99);
+    text-align: center;
+    margin: 0.5rem;
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
