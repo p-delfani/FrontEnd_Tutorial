@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <!--Basic cards-->
+    <div class="container mt-3">
+        <h2>Basic Card</h2>
+        <div class="card">
+          <div class="card-body">Basic card</div>
+        </div>
+    </div>
+    <!--Card Header and Footer-->
+    <div class="container mt-3">
+        <h2>Card Header and Footer</h2>
+        <div class="card">
+          <div class="card-header">Header</div>
+          <div class="card-body">Content</div> 
+          <div class="card-footer">Footer</div>
+        </div>
+    </div>
+    
+    <!--Cards with Contextual Classes-->
+    <div class="container mt-3">
+        <h2>Cards with Contextual Classes</h2>
+        <div class="card">
+          <div class="card-body">Basic card</div>
+        </div>
+        <br>
+        <div class="card bg-primary text-white">
+          <div class="card-body">Primary card</div>
+        </div>
+        <br>
+        <div class="card bg-success text-white">
+          <div class="card-body">Success card</div>
+        </div>
+        <br>
+        <div class="card bg-info text-white">
+          <div class="card-body">Info card</div>
+        </div>
+        <br>
+        <div class="card bg-warning text-white">
+          <div class="card-body">Warning card</div>
+        </div>
+        <br>
+        <div class="card bg-danger text-white">
+          <div class="card-body">Danger card</div>
+        </div>
+        <br>
+        <div class="card bg-secondary text-white">
+          <div class="card-body">Secondary card</div>
+        </div>
+        <br>
+        <div class="card bg-dark text-white">
+          <div class="card-body">Dark card</div>
+        </div>
+        <br>
+        <div class="card bg-light text-dark">
+          <div class="card-body">Light card</div>
+        </div>
+    </div>
+    <br><br>
+    <!--Card titles, text, and links-->
+    <div class="container mt-3">
+        <h2>Card titles, text, and links</h2>
+        <p>Use .card-title to add card titles to any heading element. The .card-text class is used to remove bottom margins for a p element if it is the last child (or the only one) in card-body. The .card-link class adds a blue color to any link, and a hover effect.</p>
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Card title</h4>
+            <p class="card-text">Some example text. Some example text.</p>
+            <a href="#" class="card-link">Card link</a>
+            <a href="#" class="card-link">Another link</a>
+          </div>
+        </div>
+    </div>
+    <br><br>
+    <!--Card Image-->
+    <div class="container mt-3">
+        <h2>Card Image</h2>
+        <p>Image at the top (card-img-top):</p>
+        <div class="card" style="width:400px">
+          <img class="card-img-top" src="asset/164b88b88236b6447e4d173d4f586907.jpg" alt="Card image" style="width:100%">
+          <div class="card-body">
+            <h4 class="card-title">John Doe</h4>
+            <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+            <a href="#" class="btn btn-primary">See Profile</a>
+          </div>
+        </div>
+        <br>
+        
+        <p>Image at the bottom (card-img-bottom):</p>
+        <div class="card" style="width:400px">
+          <div class="card-body">
+            <h4 class="card-title">Jane Doe</h4>
+            <p class="card-text">Some example text some example text. Jane Doe is an architect and engineer</p>
+            <a href="#" class="btn btn-primary">See Profile</a>
+          </div>
+          <img class="card-img-bottom" src="asset/164b88b88236b6447e4d173d4f586907.jpg" alt="Card image" style="width:100%">
+        </div>
+    </div>
+    <br><br>
+    <!--Card Image Overlay-->
+    <div class="container mt-3">
+        <h2>Card Image Overlay</h2>
+        <p>Turn an image into a card background and use .card-img-overlay to overlay the card's text:</p>
+        <div class="card img-fluid" style="width:500px">
+          <img class="card-img-top" src="asset/164b88b88236b6447e4d173d4f586907.jpg" alt="Card image" style="width:100%">
+          <div class="card-img-overlay">
+            <h4 class="card-title">John Doe</h4>
+            <p class="card-text">Some example text some example text. Some example text some example text. Some example text some example text. Some example text some example text.</p>
+            <a href="#" class="btn btn-primary">See Profile</a>
+          </div>
+        </div>
+    </div>
+      
+</body>
+</html>
