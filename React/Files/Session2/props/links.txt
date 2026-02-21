@@ -1,0 +1,5 @@
+https://www.freecodecamp.org/news/react-props-cheatsheet/
+
+https://dmitripavlutin.com/react-props/
+
+https://reactjs.org/docs/components-and-props.html
