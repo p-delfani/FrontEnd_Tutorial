@@ -1,0 +1,231 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: "Vazir-Light";
+  src: url(/fonts/Vazir-Light.woff2) format(woff2);
+}
+
+@font-face {
+  font-family: "Vazir-Medium";
+  src: url(/fonts/Vazir-Medium.woff2) format(woff2);
+}
+
+@font-face {
+  font-family: "Vazir-Bold";
+  src: url(/fonts/Vazir-Bold.woff2) format(woff2);
+}
+
+.container {
+  width: calc(100% - 20%);
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.gap-1 {
+  gap: 4px;
+}
+.gap-2 {
+  gap: 8px;
+}
+.gap-3 {
+  gap: 12px;
+}
+
+.gap-4 {
+  gap: 16px;
+}
+
+.gap-5 {
+  gap: 20px;
+}
+.gap-6 {
+  gap: 24px;
+}
+.gap-7 {
+  gap: 28px;
+}
+
+.gap-8 {
+  gap: 32px;
+}
+
+.gap-9 {
+  gap: 36px;
+}
+
+.gap-10 {
+  gap: 40px;
+}
+
+#hero-section {
+  min-height: 60vh;
+  margin: 80px auto 80px;
+
+  #hero-btns {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+  }
+
+  #title {
+    font-size: 46px;
+    font-family: "Vazir-Bold" !important;
+  }
+
+  #caption {
+    color: rgb(126, 126, 126) !important;
+  }
+
+  #image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  & > * {
+    width: calc(100% - 50%);
+  }
+}
+
+#section-title {
+  font-size: xx-large;
+  font-family: "Vazir-Bold" !important;
+}
+
+#articles-section {
+  a {
+    color: black !important;
+    text-decoration: none !important;
+  }
+
+  #items {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto;
+    gap: 32px;
+    margin-top: 40px;
+    margin-bottom: 200px;
+  }
+}
+
+.article-card {
+  header {
+    width: 100%;
+    height: 196px;
+    border-radius: 12px;
+    overflow: hidden;
+
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  main {
+    margin: 0.5rem 0;
+
+    & > * {
+      margin: 6px 0;
+    }
+
+    .article-title {
+      height: 50px;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      overflow: hidden;
+      width: 100% !important;
+      cursor: pointer;
+    }
+
+    .article-caption {
+      font-size: small;
+      color: gray;
+
+      cursor: pointer;
+      height: 63px;
+
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 3;
+      overflow: hidden;
+      width: 100% !important;
+    }
+  }
+
+  .article-footer {
+    margin-top: 10px;
+    font-size: 12px !important;
+
+    .author-label {
+      color: gray;
+      .author-name {
+        color: black !important;
+        font-family: "Vazir-Medium";
+      }
+    }
+
+    .published-date {
+      color: rgb(58, 58, 58);
+    }
+  }
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background: black;
+  opacity: 0.1;
+  margin: 12px 0;
+}
+
+.btn {
+  padding: 6px 16px 6px;
+  border-radius: 6px;
+  border: none;
+  font-family: "Vazir-Medium";
+  cursor: pointer;
+  transition: all ease 150ms;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+
+  &:hover {
+    opacity: 0.85;
+  }
+
+  & > .icon {
+    color: white !important;
+    font-size: 16px !important;
+  }
+}
+
+.primary-btn {
+  background-color: black !important;
+  color: white !important;
+}
+
+.secondary-btn {
+  background-color: white !important;
+  border: 1px solid rgb(235, 235, 235) !important;
+}

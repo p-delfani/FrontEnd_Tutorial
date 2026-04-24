@@ -1,0 +1,25 @@
+#client-footer {
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+#footer-headline {
+  max-width: 760px;
+  text-align: center;
+
+  & > * {
+    margin: 20px 0;
+  }
+  #footer-title {
+    font-family: "Vazir-Bold" !important;
+    font-size: 32px !important;
+  }
+
+  .footer-caption {
+    color: rgb(83, 83, 83);
+  }
+}
