@@ -1,16 +1,73 @@
-# React + Vite
+# SabzBlog – Programming Articles Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+SabzBlog is a simple React-based blog interface built for learning component-based development in React. The project displays programming articles and educational content in a clean and structured layout.
 
-Currently, two official plugins are available:
+This project was created as part of a learning exercise and demonstrates how to build reusable components and render dynamic content using React.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
+- Component-based architecture with React
+- Dynamic rendering of article data
+- Reusable UI components (Header, Footer, Article, Button)
+- Conditional rendering for subscription plans
+- Simple blog-style layout for articles
 
-## React Compiler
+## Technologies Used
+- React
+- JavaScript (ES6+)
+- CSS
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Project Structure
+src/
+  components/
+    Header/
+    Footer/
+    Article/
+    Button/
+  App.jsx
+  App.css
 
-## Expanding the ESLint configuration
+## How It Works
+The application stores article data inside an array of objects. Each article includes:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- title
+- author
+- image
+- price
+
+These objects are passed as props to the `Article` component, which renders each article dynamically on the page.
+
+Example article object:
+
+{
+  title: "Build Your First Resume Project with Python",
+  author: "Saeidi Rad",
+  img: "/images/example.jpg",
+  price: 0
+}
+
+## Installation
+
+Clone the repository:
+
+git clone https://github.com/your-username/sabzblog.git
+
+Go to the project folder:
+
+cd sabzblog
+
+Install dependencies:
+
+npm install
+
+Run the development server:
+
+npm run dev
+
+## Project Sections
+- Hero section introducing the platform
+- Articles section displaying recent programming articles
+- Header for navigation
+- Footer for page layout
+
+## License
+The source code of this project is based on educational materials from the SabzLearn website and is used for learning and practice purposes only.
