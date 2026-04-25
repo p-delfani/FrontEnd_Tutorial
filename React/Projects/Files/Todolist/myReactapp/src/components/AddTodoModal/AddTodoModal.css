@@ -1,0 +1,185 @@
+#modal-screen {
+  position: fixed;
+  top: calc(var(--spacing) * 0);
+  right: calc(var(--spacing) * 0);
+  display: flex;
+  font-family: "Vazir-Medium" !important;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: color-mix(in srgb, #000 20%, transparent);
+  @supports (color: color-mix(in lab, red, red)) {
+    background-color: color-mix(in oklab, var(--color-black) 20%, transparent);
+  }
+  transition-property: all;
+  transition-timing-function: var(
+    --tw-ease,
+    var(--default-transition-timing-function)
+  );
+  transition-duration: var(--tw-duration, var(--default-transition-duration));
+  --tw-duration: 150ms;
+  transition-duration: 150ms;
+  .modal-content {
+    width: 500px;
+    border-radius: var(--radius-sm);
+    background-color: var(--color-white);
+    padding: calc(var(--spacing) * 3);
+    --tw-shadow-alpha: 30%;
+    --tw-shadow: 0 25px 50px -12px var(--tw-shadow-color, oklab(from
+            rgb(0 0 0 / 0.25) l a b / 30%));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow),
+      var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+    .modal-header {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding-block: calc(var(--spacing) * 1);
+    }
+    #status-selector {
+      display: block;
+      width: 100%;
+      border-radius: var(--radius-sm);
+      border-style: var(--tw-border-style);
+      border-width: 1px;
+      border-color: var(--color-gray-300);
+      background-color: color-mix(
+        in srgb,
+        oklch(98.5% 0.002 247.839) 10%,
+        transparent
+      );
+      @supports (color: color-mix(in lab, red, red)) {
+        background-color: color-mix(
+          in oklab,
+          var(--color-gray-50) 10%,
+          transparent
+        );
+      }
+      padding: calc(var(--spacing) * 2.5);
+      font-size: var(--text-xs) !important;
+      line-height: var(--tw-leading, var(--text-xs--line-height)) !important;
+      color: var(--color-gray-900);
+      :is(& > *) {
+        display: flex;
+      }
+      :is(& > *) {
+        align-items: center;
+      }
+      :is(& > *) {
+        gap: calc(var(--spacing) * 2);
+      }
+      :is(& *) {
+        font-size: var(--text-sm) !important;
+        line-height: var(--tw-leading, var(--text-sm--line-height)) !important;
+      }
+      &:focus {
+        border-color: var(--color-blue-500);
+      }
+      &:focus {
+        --tw-ring-color: var(--color-blue-500);
+      }
+    }
+    .info-message {
+      border-radius: var(--radius-md);
+      border-style: var(--tw-border-style);
+      border-width: 1px;
+      border-color: color-mix(in oklab, #ff9500 20%, transparent);
+      background-color: color-mix(in oklab, #ec942c 10%, transparent);
+      padding: calc(var(--spacing) * 2);
+      padding-bottom: calc(var(--spacing) * 1.5) !important;
+      font-family: var(--font-Ios-15-Regular) !important;
+      font-size: var(--text-xs) !important;
+      line-height: var(--tw-leading, var(--text-xs--line-height)) !important;
+      color: #ec942c;
+    }
+  }
+}
+
+.is-hidden {
+  visibility: hidden;
+  display: none;
+}
+#create-button {
+  cursor: pointer;
+  border-radius: var(--radius-md);
+  background-color: #0073ff;
+  padding-inline: calc(var(--spacing) * 3);
+  padding-block: calc(var(--spacing) * 1.5);
+  font-size: var(--text-sm);
+  line-height: var(--tw-leading, var(--text-sm--line-height));
+  color: var(--color-white) !important;
+  transition-property: all;
+  transition-timing-function: var(
+    --tw-ease,
+    var(--default-transition-timing-function)
+  );
+  transition-duration: var(--tw-duration, var(--default-transition-duration));
+  --tw-duration: 150ms;
+  transition-duration: 150ms;
+  &:hover {
+    @media (hover: hover) {
+      background-color: color-mix(in oklab, #0073ff 80%, transparent);
+    }
+  }
+}
+
+#open-dialog {
+  display: flex;
+  height: calc(var(--spacing) * 10);
+  font-family: "Vazir-Medium" !important;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  gap: calc(var(--spacing) * 1);
+  border-radius: var(--radius-md);
+  background-color: black;
+  padding-inline: calc(var(--spacing) * 2);
+  font-size: var(--text-xs);
+  line-height: var(--tw-leading, var(--text-xs--line-height));
+  color: var(--color-white);
+  --tw-duration: 100ms;
+  transition-duration: 100ms;
+  &:hover {
+    @media (hover: hover) {
+      /* background-color: ; */
+    }
+  }
+}
+
+.input-element {
+  display: flex;
+  height: calc(var(--spacing) * 10);
+  width: 100%;
+  align-items: center;
+  border-radius: var(--radius-sm);
+  border-style: var(--tw-border-style);
+  border-width: 1px;
+  border-color: var(--color-zinc-200);
+  padding-inline: calc(var(--spacing) * 4);
+  font-family: var(--font-Ios-15-Regular) !important;
+  font-size: var(--text-sm);
+  line-height: var(--tw-leading, var(--text-sm--line-height));
+  &::placeholder {
+    padding-bottom: calc(var(--spacing) * 2) !important;
+  }
+  &::placeholder {
+    font-size: var(--text-sm) !important;
+    line-height: var(--tw-leading, var(--text-sm--line-height)) !important;
+  }
+}
+
+.description-input {
+  min-height: 160px;
+  padding-top: calc(var(--spacing) * 2);
+}
+
+#modal-close-button {
+  background-color: #de4d3b;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 300 !important;
+  user-select: none;
+}
