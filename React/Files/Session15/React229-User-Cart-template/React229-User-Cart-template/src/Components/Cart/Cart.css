@@ -1,0 +1,5 @@
+.bag-sidebar.active {
+    right: 0;
+    opacity: 1;
+    /* ... */
+}
