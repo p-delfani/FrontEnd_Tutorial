@@ -1,0 +1,5 @@
+main:
+    https://medium.com/free-code-camp/writing-a-killer-software-engineering-resume-b11c91ef699d
+
+translate:
+    https://virgool.io/Quera-Mag/writing-the-best-programming-resume-rkm9za9zbh9q
