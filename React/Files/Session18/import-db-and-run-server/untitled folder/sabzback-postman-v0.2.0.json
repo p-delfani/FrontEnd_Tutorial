@@ -1,0 +1,2680 @@
+{
+	"info": {
+		"_postman_id": "4217208b-faa0-40f7-8b9e-a24563af03c2",
+		"name": "sabzlearn",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24023116"
+	},
+	"item": [
+		{
+			"name": "articles",
+			"item": [
+				{
+					"name": "post new article",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MzE4NzcyNDc0OGIyYTI0NDFlZWRlNCIsImlhdCI6MTY4MDk2ODA5NSwiZXhwIjoxNjgzNTYwMDk1fQ.U-_JkzXOHtzouZcRIWsTlwR3CdaQuWGJnJ1Xh6vwd9s",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "cover",
+									"type": "file",
+									"src": "/C:/Users/AliZ/Desktop/empt  desk 1401.12.29/1flyingRocket.png"
+								},
+								{
+									"key": "title",
+									"value": "پست جدید تست",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "توضیحات پست جدید تست",
+									"type": "text"
+								},
+								{
+									"key": "body",
+									"value": "متن تست پست جدید متن تست پست جدید متن تست پست جدید متن تست پست جدید متن تست پست جدید متن تست پست جدید متن تست پست جدید متن تست پست جدید متن تست پست جدید ",
+									"type": "text"
+								},
+								{
+									"key": "shortName",
+									"value": "vue-or-react-new-2",
+									"type": "text"
+								},
+								{
+									"key": "categoryID",
+									"value": "6345cbd132c10de974957632",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4000/v1/articles",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"v1",
+								"articles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "post new draft",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MzE4NzcyNDc0OGIyYTI0NDFlZWRlNCIsImlhdCI6MTY4MDk2ODA5NSwiZXhwIjoxNjgzNTYwMDk1fQ.U-_JkzXOHtzouZcRIWsTlwR3CdaQuWGJnJ1Xh6vwd9s",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "cover",
+									"type": "file",
+									"src": "/C:/Users/AliZ/Desktop/empt  desk 1401.12.29/1flyingRocket.png"
+								},
+								{
+									"key": "title",
+									"value": "پست جدید تست",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "توضیحات پست جدید تست",
+									"type": "text"
+								},
+								{
+									"key": "body",
+									"value": "متن تست پست جدید متن تست پست جدید متن تست پست جدید متن تست پست جدید متن تست پست جدید متن تست پست جدید متن تست پست جدید متن تست پست جدید متن تست پست جدید ",
+									"type": "text"
+								},
+								{
+									"key": "shortName",
+									"value": "vue-or-react-new-24",
+									"type": "text"
+								},
+								{
+									"key": "categoryID",
+									"value": "6345cbd132c10de974957632",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4000/v1/articles/draft",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"v1",
+								"articles",
+								"draft"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all articles",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0Mjg2NTkzMjYyMzFhM2MyMjc2YTlkMyIsImlhdCI6MTY4MDM2OTA1MiwiZXhwIjoxNjgyOTYxMDUyfQ.ipr5LQ3yrf-L5YOkSAMxdBi2xECwRMtpgGZBRagor_E",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "cover",
+									"type": "file",
+									"src": "/C:/Users/AliZ/Desktop/empt  desk 1401.12.29/2.PNG"
+								},
+								{
+									"key": "title",
+									"value": "wer",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "wwereee",
+									"type": "text"
+								},
+								{
+									"key": "body",
+									"value": "ee",
+									"type": "text"
+								},
+								{
+									"key": "shortName",
+									"value": "ee",
+									"type": "text"
+								},
+								{
+									"key": "publish",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "creator",
+									"value": "507f191e810c19729de860ea",
+									"type": "text"
+								},
+								{
+									"key": "categoryID",
+									"value": "507f191e810c19729de860ea",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4000/v1/articles",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"v1",
+								"articles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get single article",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MzE4NzcyNDc0OGIyYTI0NDFlZWRlNCIsImlhdCI6MTY4MDk2ODA5NSwiZXhwIjoxNjgzNTYwMDk1fQ.U-_JkzXOHtzouZcRIWsTlwR3CdaQuWGJnJ1Xh6vwd9s",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "cover",
+									"type": "file",
+									"src": "/C:/Users/AliZ/Desktop/empt  desk 1401.12.29/1flyingRocket.png"
+								},
+								{
+									"key": "title",
+									"value": "پست جدید تست",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "توضیحات پست جدید تست",
+									"type": "text"
+								},
+								{
+									"key": "body",
+									"value": "متن تست پست جدید متن تست پست جدید متن تست پست جدید متن تست پست جدید متن تست پست جدید متن تست پست جدید متن تست پست جدید متن تست پست جدید متن تست پست جدید ",
+									"type": "text"
+								},
+								{
+									"key": "shortName",
+									"value": "vue-or-react-new",
+									"type": "text"
+								},
+								{
+									"key": "publish",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "creator",
+									"value": "634e6b0e1d5142b91afa9bb3",
+									"type": "text"
+								},
+								{
+									"key": "categoryID",
+									"value": "6345cbd132c10de974957632",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4000/v1/articles/vue-or-react-new",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"v1",
+								"articles",
+								"vue-or-react-new"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete article",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/v1/articles/64319097d0fb16223c5b013c",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"v1",
+								"articles",
+								"64319097d0fb16223c5b013c"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "auth",
+			"item": [
+				{
+					"name": "get user info",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MzE4NzcyNDc0OGIyYTI0NDFlZWRlNCIsImlhdCI6MTY4MDk2ODA5NSwiZXhwIjoxNjgzNTYwMDk1fQ.U-_JkzXOHtzouZcRIWsTlwR3CdaQuWGJnJ1Xh6vwd9s",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/v1/auth/me",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"v1",
+								"auth",
+								"me"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "register new user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "admin",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "admin@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "adminadmin",
+									"type": "text"
+								},
+								{
+									"key": "confirmPassword",
+									"value": "adminadmin",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "admin ali",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "09123456789",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4000/v1/auth/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"v1",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "admin",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "identifier",
+									"value": "admin@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "adminadmin",
+									"type": "text"
+								},
+								{
+									"key": "confirmPassword",
+									"value": "adminadmin",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "name",
+									"value": "admin ali",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "phone",
+									"value": "09123456789",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4000/v1/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"v1",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "category",
+			"item": [
+				{
+					"name": "get all categories",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/v1/category",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"v1",
+								"category"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create category",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MzE4NzcyNDc0OGIyYTI0NDFlZWRlNCIsImlhdCI6MTY4MDk2ODA5NSwiZXhwIjoxNjgzNTYwMDk1fQ.U-_JkzXOHtzouZcRIWsTlwR3CdaQuWGJnJ1Xh6vwd9s",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "title",
+									"value": "newCat",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "cat test",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4000/v1/category",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"v1",
+								"category"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit category",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MzE4NzcyNDc0OGIyYTI0NDFlZWRlNCIsImlhdCI6MTY4MDk2ODA5NSwiZXhwIjoxNjgzNTYwMDk1fQ.U-_JkzXOHtzouZcRIWsTlwR3CdaQuWGJnJ1Xh6vwd9s",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "title",
+									"value": "new Cat",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "cat test",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4000/v1/category/6431926e19f9447c1427bb89",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"v1",
+								"category",
+								"6431926e19f9447c1427bb89"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete category",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MzE4NzcyNDc0OGIyYTI0NDFlZWRlNCIsImlhdCI6MTY4MDk2ODA5NSwiZXhwIjoxNjgzNTYwMDk1fQ.U-_JkzXOHtzouZcRIWsTlwR3CdaQuWGJnJ1Xh6vwd9s",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/v1/category/6431926e19f9447c1427bb89",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"v1",
+								"category",
+								"6431926e19f9447c1427bb89"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "comments",
+			"item": [
+				{
+					"name": "get all comments",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/v1/comments",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"v1",
+								"comments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create comment",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MzE4NzcyNDc0OGIyYTI0NDFlZWRlNCIsImlhdCI6MTY4MDk2ODA5NSwiZXhwIjoxNjgzNTYwMDk1fQ.U-_JkzXOHtzouZcRIWsTlwR3CdaQuWGJnJ1Xh6vwd9s",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "body",
+									"value": " خیلی خوب بود",
+									"type": "text"
+								},
+								{
+									"key": "courseShortName",
+									"value": "npm",
+									"type": "text"
+								},
+								{
+									"key": "score",
+									"value": "5",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4000/v1/comments",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"v1",
+								"comments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "answer comment",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MzE4NzcyNDc0OGIyYTI0NDFlZWRlNCIsImlhdCI6MTY4MDk2ODA5NSwiZXhwIjoxNjgzNTYwMDk1fQ.U-_JkzXOHtzouZcRIWsTlwR3CdaQuWGJnJ1Xh6vwd9s",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "body",
+									"value": "دقیقا",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4000/v1/comments/answer/635091df49de41347dfbae48",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"v1",
+								"comments",
+								"answer",
+								"635091df49de41347dfbae48"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete comment",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MzE4NzcyNDc0OGIyYTI0NDFlZWRlNCIsImlhdCI6MTY4MDk2ODA5NSwiZXhwIjoxNjgzNTYwMDk1fQ.U-_JkzXOHtzouZcRIWsTlwR3CdaQuWGJnJ1Xh6vwd9s",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/v1/comments/6431d3e3f37d21eda98f88b6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"v1",
+								"comments",
+								"6431d3e3f37d21eda98f88b6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "reject comment",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MzE4NzcyNDc0OGIyYTI0NDFlZWRlNCIsImlhdCI6MTY4MDk2ODA5NSwiZXhwIjoxNjgzNTYwMDk1fQ.U-_JkzXOHtzouZcRIWsTlwR3CdaQuWGJnJ1Xh6vwd9s",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "body",
+									"value": "دقیقا",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4000/v1/comments/reject/635091df49de41347dfbae48",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"v1",
+								"comments",
+								"reject",
+								"635091df49de41347dfbae48"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "accept comment",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MzE4NzcyNDc0OGIyYTI0NDFlZWRlNCIsImlhdCI6MTY4MDk2ODA5NSwiZXhwIjoxNjgzNTYwMDk1fQ.U-_JkzXOHtzouZcRIWsTlwR3CdaQuWGJnJ1Xh6vwd9s",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "body",
+									"value": "دقیقا",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4000/v1/comments/accept/635091df49de41347dfbae48",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"v1",
+								"comments",
+								"accept",
+								"635091df49de41347dfbae48"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "contact",
+			"item": [
+				{
+					"name": "get all contacts",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/v1/contact",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"v1",
+								"contact"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create contact",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "ali",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "ali@ali.com",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "09123456789",
+									"type": "text"
+								},
+								{
+									"key": "body",
+									"value": "سلام من علی هستم سلام من علی هستم سلام من علی هستم سلام من علی هستم ",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4000/v1/contact",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"v1",
+								"contact"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "remove contact",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MzE4NzcyNDc0OGIyYTI0NDFlZWRlNCIsImlhdCI6MTY4MDk2ODA5NSwiZXhwIjoxNjgzNTYwMDk1fQ.U-_JkzXOHtzouZcRIWsTlwR3CdaQuWGJnJ1Xh6vwd9s",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/v1/contact/6431da73f37d21eda98f88cd",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"v1",
+								"contact",
+								"6431da73f37d21eda98f88cd"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "answer to contact",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MzE4NzcyNDc0OGIyYTI0NDFlZWRlNCIsImlhdCI6MTY4MDk2ODA5NSwiZXhwIjoxNjgzNTYwMDk1fQ.U-_JkzXOHtzouZcRIWsTlwR3CdaQuWGJnJ1Xh6vwd9s",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "helloworld@yopmail.com",
+									"type": "text"
+								},
+								{
+									"key": "answer",
+									"value": "سلام. جواب تست سلام. جواب تست سلام. جواب تست ",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4000/v1/contact/answer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"v1",
+								"contact",
+								"answer"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "courses",
+			"item": [
+				{
+					"name": "get all courses",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/v1/courses",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"v1",
+								"courses"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create course",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MzE4NzcyNDc0OGIyYTI0NDFlZWRlNCIsImlhdCI6MTY4MDk2ODA5NSwiZXhwIjoxNjgzNTYwMDk1fQ.U-_JkzXOHtzouZcRIWsTlwR3CdaQuWGJnJ1Xh6vwd9s",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "آموزش chatgpt",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "تست متن توضیحات",
+									"type": "text"
+								},
+								{
+									"key": "cover",
+									"type": "file",
+									"src": "/C:/Users/AliZ/Desktop/empt  desk 1401.12.29/bg_space_seamless_1.png"
+								},
+								{
+									"key": "shortName",
+									"value": "chat-gpt",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "0",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "start",
+									"type": "text"
+								},
+								{
+									"key": "categoryID",
+									"value": "635ef447f058a6af04d00510",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4000/v1/courses",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"v1",
+								"courses"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get category courses",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/v1/courses/category/frontend",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"v1",
+								"courses",
+								"category",
+								"frontend"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete course",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MzE4NzcyNDc0OGIyYTI0NDFlZWRlNCIsImlhdCI6MTY4MDk2ODA5NSwiZXhwIjoxNjgzNTYwMDk1fQ.U-_JkzXOHtzouZcRIWsTlwR3CdaQuWGJnJ1Xh6vwd9s",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/v1/courses/6431dd8e246261693c267bd1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"v1",
+								"courses",
+								"6431dd8e246261693c267bd1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create session",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MzE4NzcyNDc0OGIyYTI0NDFlZWRlNCIsImlhdCI6MTY4MDk2ODA5NSwiZXhwIjoxNjgzNTYwMDk1fQ.U-_JkzXOHtzouZcRIWsTlwR3CdaQuWGJnJ1Xh6vwd9s",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "video",
+									"type": "file",
+									"src": "/C:/Users/AliZ/Desktop/sample-mp4-file-small.mp4"
+								},
+								{
+									"key": "title",
+									"value": "معرفی",
+									"type": "text"
+								},
+								{
+									"key": "time",
+									"value": "20",
+									"type": "text"
+								},
+								{
+									"key": "free",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4000/v1/courses/63ac0dcca3afd7323a7bb285/sessions",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"v1",
+								"courses",
+								"63ac0dcca3afd7323a7bb285",
+								"sessions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all sessions",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/v1/courses/sessions",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"v1",
+								"courses",
+								"sessions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "remove session",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MzE4NzcyNDc0OGIyYTI0NDFlZWRlNCIsImlhdCI6MTY4MDk2ODA5NSwiZXhwIjoxNjgzNTYwMDk1fQ.U-_JkzXOHtzouZcRIWsTlwR3CdaQuWGJnJ1Xh6vwd9s",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/v1/courses/sessions/6431f72f4b10e7bd22e6013c",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"v1",
+								"courses",
+								"sessions",
+								"6431f72f4b10e7bd22e6013c"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get related courses",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/v1/courses/related/canvas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"v1",
+								"courses",
+								"related",
+								"canvas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get session info",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MzE4NzcyNDc0OGIyYTI0NDFlZWRlNCIsImlhdCI6MTY4MDk2ODA5NSwiZXhwIjoxNjgzNTYwMDk1fQ.U-_JkzXOHtzouZcRIWsTlwR3CdaQuWGJnJ1Xh6vwd9s",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/v1/courses/npm/6345daddda1fd01ed3545316",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"v1",
+								"courses",
+								"npm",
+								"6345daddda1fd01ed3545316"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get presells",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/v1/courses/presell",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"v1",
+								"courses",
+								"presell"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get popular",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/v1/courses/popular",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"v1",
+								"courses",
+								"popular"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get single course data",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MzE4NzcyNDc0OGIyYTI0NDFlZWRlNCIsImlhdCI6MTY4MDk2ODA5NSwiZXhwIjoxNjgzNTYwMDk1fQ.U-_JkzXOHtzouZcRIWsTlwR3CdaQuWGJnJ1Xh6vwd9s",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/v1/courses/canvas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"v1",
+								"courses",
+								"canvas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "register to course",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MzE4NzcyNDc0OGIyYTI0NDFlZWRlNCIsImlhdCI6MTY4MDk2ODA5NSwiZXhwIjoxNjgzNTYwMDk1fQ.U-_JkzXOHtzouZcRIWsTlwR3CdaQuWGJnJ1Xh6vwd9s",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "price",
+									"value": "500000",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4000/v1/courses/63ac0dcca3afd7323a7bb285/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"v1",
+								"courses",
+								"63ac0dcca3afd7323a7bb285",
+								"register"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "infos",
+			"item": [
+				{
+					"name": "get infos",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/v1/infos/index",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"v1",
+								"infos",
+								"index"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get admin panel data",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MzE4NzcyNDc0OGIyYTI0NDFlZWRlNCIsImlhdCI6MTY4MDk2ODA5NSwiZXhwIjoxNjgzNTYwMDk1fQ.U-_JkzXOHtzouZcRIWsTlwR3CdaQuWGJnJ1Xh6vwd9s",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/v1/infos/p-admin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"v1",
+								"infos",
+								"p-admin"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "menus",
+			"item": [
+				{
+					"name": "get all menus",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/v1/menus",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"v1",
+								"menus"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all panel menus",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/v1/menus/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"v1",
+								"menus",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all topbar links",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/v1/menus/topbar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"v1",
+								"menus",
+								"topbar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create menu",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MzE4NzcyNDc0OGIyYTI0NDFlZWRlNCIsImlhdCI6MTY4MDk2ODA5NSwiZXhwIjoxNjgzNTYwMDk1fQ.U-_JkzXOHtzouZcRIWsTlwR3CdaQuWGJnJ1Xh6vwd9s",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "title",
+									"value": "تست 1",
+									"type": "text"
+								},
+								{
+									"key": "href",
+									"value": "test",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4000/v1/menus/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"v1",
+								"menus",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete menu",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MzE4NzcyNDc0OGIyYTI0NDFlZWRlNCIsImlhdCI6MTY4MDk2ODA5NSwiZXhwIjoxNjgzNTYwMDk1fQ.U-_JkzXOHtzouZcRIWsTlwR3CdaQuWGJnJ1Xh6vwd9s",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/v1/menus/6431fc8347299a8f25abe61b",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"v1",
+								"menus",
+								"6431fc8347299a8f25abe61b"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "newsletters",
+			"item": [
+				{
+					"name": "get all newsletters",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/v1/newsletters",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"v1",
+								"newsletters"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create newsletter",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "test@newsletter.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4000/v1/newsletters",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"v1",
+								"newsletters"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "notifications",
+			"item": [
+				{
+					"name": "see notification",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MzE4NzcyNDc0OGIyYTI0NDFlZWRlNCIsImlhdCI6MTY4MDk2ODA5NSwiZXhwIjoxNjgzNTYwMDk1fQ.U-_JkzXOHtzouZcRIWsTlwR3CdaQuWGJnJ1Xh6vwd9s",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "test@newsletter.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4000/v1/notifications/see/635a6bc3e2f84a0f2ec27e8f",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"v1",
+								"notifications",
+								"see",
+								"635a6bc3e2f84a0f2ec27e8f"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "offs",
+			"item": [
+				{
+					"name": "get all offs",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MzE4NzcyNDc0OGIyYTI0NDFlZWRlNCIsImlhdCI6MTY4MDk2ODA5NSwiZXhwIjoxNjgzNTYwMDk1fQ.U-_JkzXOHtzouZcRIWsTlwR3CdaQuWGJnJ1Xh6vwd9s",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/v1/offs",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"v1",
+								"offs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create off",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MzE4NzcyNDc0OGIyYTI0NDFlZWRlNCIsImlhdCI6MTY4MDk2ODA5NSwiZXhwIjoxNjgzNTYwMDk1fQ.U-_JkzXOHtzouZcRIWsTlwR3CdaQuWGJnJ1Xh6vwd9s",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "code",
+									"value": "newtest",
+									"type": "text"
+								},
+								{
+									"key": "percent",
+									"value": "10",
+									"type": "text"
+								},
+								{
+									"key": "course",
+									"value": "6345cda6474f74e04218f6f7",
+									"type": "text"
+								},
+								{
+									"key": "max",
+									"value": "80",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4000/v1/offs",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"v1",
+								"offs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "set discount / off on all",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MzE4NzcyNDc0OGIyYTI0NDFlZWRlNCIsImlhdCI6MTY4MDk2ODA5NSwiZXhwIjoxNjgzNTYwMDk1fQ.U-_JkzXOHtzouZcRIWsTlwR3CdaQuWGJnJ1Xh6vwd9s",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "discount",
+									"value": "10",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4000/v1/offs/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"v1",
+								"offs",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "use code",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MzE4NzcyNDc0OGIyYTI0NDFlZWRlNCIsImlhdCI6MTY4MDk2ODA5NSwiZXhwIjoxNjgzNTYwMDk1fQ.U-_JkzXOHtzouZcRIWsTlwR3CdaQuWGJnJ1Xh6vwd9s",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "course",
+									"value": "635d494ed4d9250c10a1dadc",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4000/v1/offs/bs35",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"v1",
+								"offs",
+								"bs35"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete code",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MzE4NzcyNDc0OGIyYTI0NDFlZWRlNCIsImlhdCI6MTY4MDk2ODA5NSwiZXhwIjoxNjgzNTYwMDk1fQ.U-_JkzXOHtzouZcRIWsTlwR3CdaQuWGJnJ1Xh6vwd9s",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/v1/offs/64320186311ef6e858d6561f",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"v1",
+								"offs",
+								"64320186311ef6e858d6561f"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "orders",
+			"item": [
+				{
+					"name": "get all orders of user",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MzE4NzcyNDc0OGIyYTI0NDFlZWRlNCIsImlhdCI6MTY4MDk2ODA5NSwiZXhwIjoxNjgzNTYwMDk1fQ.U-_JkzXOHtzouZcRIWsTlwR3CdaQuWGJnJ1Xh6vwd9s",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/v1/orders",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"v1",
+								"orders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get single order of user",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MzE4NzcyNDc0OGIyYTI0NDFlZWRlNCIsImlhdCI6MTY4MDk2ODA5NSwiZXhwIjoxNjgzNTYwMDk1fQ.U-_JkzXOHtzouZcRIWsTlwR3CdaQuWGJnJ1Xh6vwd9s",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/v1/orders/6431fb3b47299a8f25abe609",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"v1",
+								"orders",
+								"6431fb3b47299a8f25abe609"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "search",
+			"item": [
+				{
+					"name": "search in articles and courses",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/v1/search/np",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"v1",
+								"search",
+								"np"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "tickets",
+			"item": [
+				{
+					"name": "get all tickets",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MzE4NzcyNDc0OGIyYTI0NDFlZWRlNCIsImlhdCI6MTY4MDk2ODA5NSwiZXhwIjoxNjgzNTYwMDk1fQ.U-_JkzXOHtzouZcRIWsTlwR3CdaQuWGJnJ1Xh6vwd9s",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/v1/tickets",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"v1",
+								"tickets"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create ticket",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MzE4NzcyNDc0OGIyYTI0NDFlZWRlNCIsImlhdCI6MTY4MDk2ODA5NSwiZXhwIjoxNjgzNTYwMDk1fQ.U-_JkzXOHtzouZcRIWsTlwR3CdaQuWGJnJ1Xh6vwd9s",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "departmentID",
+									"value": "63b68879f1d06a5090090f60",
+									"type": "text"
+								},
+								{
+									"key": "departmentSubID",
+									"value": "63b688d0e1286a126a8f2ff0",
+									"type": "text"
+								},
+								{
+									"key": "title",
+									"value": "لود نشدن",
+									"type": "text"
+								},
+								{
+									"key": "body",
+									"value": "محتوا لود نمیشه",
+									"type": "text"
+								},
+								{
+									"key": "priority",
+									"value": "23",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4000/v1/tickets",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"v1",
+								"tickets"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get user's tickets",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MzE4NzcyNDc0OGIyYTI0NDFlZWRlNCIsImlhdCI6MTY4MDk2ODA5NSwiZXhwIjoxNjgzNTYwMDk1fQ.U-_JkzXOHtzouZcRIWsTlwR3CdaQuWGJnJ1Xh6vwd9s",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/v1/tickets/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"v1",
+								"tickets",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get departments list",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/v1/tickets/departments",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"v1",
+								"tickets",
+								"departments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get single department",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/v1/tickets/departments-subs/63b6888a5763c3034ca862b0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"v1",
+								"tickets",
+								"departments-subs",
+								"63b6888a5763c3034ca862b0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "answer to ticket",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MzE4NzcyNDc0OGIyYTI0NDFlZWRlNCIsImlhdCI6MTY4MDk2ODA5NSwiZXhwIjoxNjgzNTYwMDk1fQ.U-_JkzXOHtzouZcRIWsTlwR3CdaQuWGJnJ1Xh6vwd9s",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "body",
+									"value": "اصلاح شد",
+									"type": "text"
+								},
+								{
+									"key": "ticketID",
+									"value": "643213052b517ffaade168fc",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4000/v1/tickets/answer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"v1",
+								"tickets",
+								"answer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get answers of ticket",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MzE4NzcyNDc0OGIyYTI0NDFlZWRlNCIsImlhdCI6MTY4MDk2ODA5NSwiZXhwIjoxNjgzNTYwMDk1fQ.U-_JkzXOHtzouZcRIWsTlwR3CdaQuWGJnJ1Xh6vwd9s",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/v1/tickets/answer/643213052b517ffaade168fc",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"v1",
+								"tickets",
+								"answer",
+								"643213052b517ffaade168fc"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "get all users",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MzE4NzcyNDc0OGIyYTI0NDFlZWRlNCIsImlhdCI6MTY4MDk2ODA5NSwiZXhwIjoxNjgzNTYwMDk1fQ.U-_JkzXOHtzouZcRIWsTlwR3CdaQuWGJnJ1Xh6vwd9s",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/v1/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"v1",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit user - user panel",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MzE4NzcyNDc0OGIyYTI0NDFlZWRlNCIsImlhdCI6MTY4MDk2ODA5NSwiZXhwIjoxNjgzNTYwMDk1fQ.U-_JkzXOHtzouZcRIWsTlwR3CdaQuWGJnJ1Xh6vwd9s",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "ali-username",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "ali-name",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "ali@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "adminadmin",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "09123456789",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4000/v1/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"v1",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete user - admin",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MzE4NzcyNDc0OGIyYTI0NDFlZWRlNCIsImlhdCI6MTY4MDk2ODA5NSwiZXhwIjoxNjgzNTYwMDk1fQ.U-_JkzXOHtzouZcRIWsTlwR3CdaQuWGJnJ1Xh6vwd9s",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "ali-username",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "ali-name",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "ali@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "adminadmin",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "09123456789",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4000/v1/users/643215e12b517ffaade16920",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"v1",
+								"users",
+								"643215e12b517ffaade16920"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ban user - admin",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MzE4NzcyNDc0OGIyYTI0NDFlZWRlNCIsImlhdCI6MTY4MDk2ODA5NSwiZXhwIjoxNjgzNTYwMDk1fQ.U-_JkzXOHtzouZcRIWsTlwR3CdaQuWGJnJ1Xh6vwd9s",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "ali-username",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "ali-name",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "ali@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "adminadmin",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "09123456789",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4000/v1/users/ban/643215e12b517ffaade16920",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"v1",
+								"users",
+								"ban",
+								"643215e12b517ffaade16920"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get user courses - user panel",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MzE4NzcyNDc0OGIyYTI0NDFlZWRlNCIsImlhdCI6MTY4MDk2ODA5NSwiZXhwIjoxNjgzNTYwMDk1fQ.U-_JkzXOHtzouZcRIWsTlwR3CdaQuWGJnJ1Xh6vwd9s",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "ali-username",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "ali-name",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "ali@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "adminadmin",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "09123456789",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4000/v1/users/courses",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"v1",
+								"users",
+								"courses"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "change user role - admin",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MzE4NzcyNDc0OGIyYTI0NDFlZWRlNCIsImlhdCI6MTY4MDk2ODA5NSwiZXhwIjoxNjgzNTYwMDk1fQ.U-_JkzXOHtzouZcRIWsTlwR3CdaQuWGJnJ1Xh6vwd9s",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id",
+									"value": "635bd2be3b1c31520471f4a4",
+									"type": "text"
+								},
+								{
+									"key": "role",
+									"value": "USER",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "ali@gmail.com",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "password",
+									"value": "adminadmin",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "phone",
+									"value": "09123456789",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4000/v1/users/role",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"v1",
+								"users",
+								"role"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
