@@ -1,0 +1,135 @@
+/* ================== ساختار کلی ================== */
+.admin-sub-page {
+  padding: 30px;
+  color: #000000;
+  direction: rtl;
+  font-family: Vazirmatn, sans-serif;
+}
+
+.page-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 25px;
+  color: #42a5ff;
+}
+
+/* ================== گرید محتوا ================== */
+.content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+/* ================== باکس ها ================== */
+.content-box {
+  background: rgba(85, 85, 85, 0.05);
+  border-radius: 16px;
+  padding: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 0 18px rgba(0, 170, 255, 0.18);
+}
+
+/* ================== فرم ================== */
+.form-box {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form-box input {
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.15);
+  border: none;
+  color: #d5e4ff;
+  border-radius: 10px;
+  outline: none;
+}
+
+.form-box input::placeholder {
+  color: rgba(213, 228, 255, 0.6);
+}
+
+.form-box button {
+  padding: 12px;
+  background: #18587e;
+  border: none;
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.form-box button:hover {
+  opacity: 0.85;
+}
+
+/* ================== سرچ ================== */
+.search-input {
+  width: 100%;
+  margin: 12px 0 18px;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background: rgba(66, 165, 255, 0.15);
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.search-input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* ================== جدول ================== */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.data-table thead {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.data-table th {
+  padding: 12px;
+  text-align: center;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.data-table td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  color: #e8f1ff;
+}
+
+.data-table tr:hover td {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+/* ================== دکمه ها ================== */
+.btn-edit {
+  background: #0bbd81;
+  border: none;
+  padding: 7px 14px;
+  border-radius: 7px;
+  color: white;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.btn-delete {
+  background: #ff5555;
+  border: none;
+  padding: 7px 14px;
+  border-radius: 7px;
+  color: white;
+  cursor: pointer;
+}
+
+.btn-edit:hover,
+.btn-delete:hover {
+  opacity: 0.85;
+}

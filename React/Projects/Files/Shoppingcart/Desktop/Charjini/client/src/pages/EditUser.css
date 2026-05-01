@@ -1,0 +1,58 @@
+/* =========== Reset =========== */
+* { 
+  box-sizing: border-box; 
+  color: #fff !important;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: "Vazirmatn", sans-serif;
+}
+
+/* Theme */
+:root {
+  --accent-1: #007bff;
+  --accent-2: #00c3ff;
+  --glass-1: rgba(255,255,255,0.06);
+}
+
+/* فرم ویرایش */
+.edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.edit-form input {
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  background: rgba(255,255,255,0.1);
+  color: #fff;
+}
+
+.edit-form input:focus {
+  border: 1px solid var(--accent-1);
+  box-shadow: 0 0 6px rgba(0,195,255,0.35);
+}
+
+/* دکمه ذخیره */
+.submit-btn {
+  margin-top: 10px;
+  padding: 12px;
+  border: none;
+  background: linear-gradient(90deg, #0066ff, #00eaff);
+  border-radius: 12px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: .2s;
+}
+
+.submit-btn:hover {
+  opacity: .85;
+}

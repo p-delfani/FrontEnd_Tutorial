@@ -1,0 +1,119 @@
+.gateway-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  background: #0e0e0e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.gateway-box {
+  width: 420px;
+  background: #1a1a1a;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 0 18px rgba(255, 255, 255, 0.1);
+  color: white;
+  text-align: center;
+}
+
+.bank-header {
+  margin-bottom: 15px;
+}
+
+.bank-header img {
+  width: 110px;
+  height: 110px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.bank-header h3 {
+  font-size: 20px;
+  margin: 0;
+  color: white;
+}
+
+.security-warning {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 14px;
+  font-size: 14px;
+}
+
+.amount-section {
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.timer-box {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 8px;
+  border-radius: 6px;
+  margin-bottom: 18px;
+  font-size: 15px;
+}
+
+.gateway-form {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  margin-top: 10px;
+}
+
+.gateway-form label {
+  margin: 6px 0 4px;
+  font-size: 14px;
+}
+
+.gateway-form input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #444;
+  background: #111;
+  color: white;
+  font-size: 15px;
+  outline: none;
+}
+
+.gateway-form input:focus {
+  border-color: #e0e0e0;
+}
+
+/* ⭐ تبدیل CVV2 و Exp به حالت رمز (ستاره‌ای) */
+input[type="password"] {
+  letter-spacing: 3px;
+}
+
+/* ⭐ کد امنیتی */
+.captcha-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.captcha-box {
+  padding: 10px 15px;
+  background: #333;
+  border-radius: 8px;
+  font-size: 16px;
+  letter-spacing: 3px;
+}
+
+.gateway-pay-btn {
+  margin-top: 18px;
+  padding: 12px;
+  background: #0084ff;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 17px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.gateway-pay-btn:hover {
+  background: #0a9aff;
+}
