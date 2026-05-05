@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import NoCity from "./components/NoCity";
-
+    
 function App() {
   const [city, setCity] = useState("");
   const [cityTempData, setCityTempData] = useState({});
