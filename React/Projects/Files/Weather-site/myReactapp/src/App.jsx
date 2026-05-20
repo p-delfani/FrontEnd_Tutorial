@@ -6,7 +6,7 @@ function App() {
   const [city, setCity] = useState("");
   const [cityTempData, setCityTempData] = useState({});
   const [noCity, setNoCity] = useState(false);
-
+           
   const cities = [
     { id: 1, name: "تهران", temp: 25, desc: "تقریبا ابری - احتمال بارش" },
     { id: 2, name: "تبریز", temp: 23, desc: "کاملا ابری - بارش باران" },
