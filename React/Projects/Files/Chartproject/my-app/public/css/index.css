@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@theme {
+  --font-IRANSansX: "IRANSansX";
+  --breakpoint-*: initial;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+}
+
+@utility container {
+  @apply mx-auto;
+}
+
+body {
+  @apply font-IRANSansX overflow-x-hidden pb-20;
+}
+
+#client-header {
+  @apply w-full h-24  flex items-center justify-between bg-white;
+}
+
+.summary-icon {
+  @apply size-[56px] rounded-full text-3xl flex items-center justify-center bg-green-500 text-white;
+}
+
+.summary-value {
+  @apply text-xl font-IRANSansX font-black;
+}
+
+.summaries {
+  @apply container grid *:w-full *:flex *:items-center *:px-6 *:gap-5 *:h-[108px] *:border *:border-zinc-200 *:rounded-lg grid-cols-4 gap-3 *:bg-white;
+}
+
+#background {
+  @apply fixed top-0 z-[-2] h-screen w-screen bg-white bg-[radial-gradient(100%_50%_at_50%_0%,rgba(0,163,255,0.13)_0,rgba(0,163,255,0)_50%,rgba(0,163,255,0)_100%)];
+}
+
+#charts-container {
+  @apply container *:w-full *:p-10 space-y-10 *:bg-white *:shadow *:border *:border-zinc-200 *:rounded-xl;
+}
+
+#profile-dropdown {
+  @apply cursor-pointer size-12 duration-150 focus-within:ring-4 ring-black/40 rounded-full;
+}
+
+.tag {
+  @apply text-xs max-w-max text-white font-bold px-2 py-1 rounded-md bg-blue-500;
+}
+
+.profile-wrap {
+  @apply flex items-center gap-2 cursor-pointer select-none;
+}
+
+.sabz-pay {
+  @apply font-IRANSansX font-black text-green-500 inline-block px-1 text-2xl;
+}
+
+.stay-between {
+  @apply container flex items-center justify-between grow;
+}
+
+.content {
+  @apply w-dvw min-h-dvh  space-y-20 relative z-1000;
+}
+
+.section-title {
+  @apply text-2xl font-bold;
+}
