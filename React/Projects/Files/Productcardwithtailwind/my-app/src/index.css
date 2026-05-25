@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "iransans-regular";
+  src: url("/fonts/IRANSansX-Regular.woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+.font-iransans {
+  font-family: "iransans-regular";
+}
