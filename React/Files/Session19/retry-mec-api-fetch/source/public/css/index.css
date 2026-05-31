@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@theme {
+  --font-IRANSansX: "IRANSansX";
+}
+
+body {
+  @apply font-IRANSansX text-zinc-700;
+}
+
+#content {
+  @apply pt-20 max-w-[768px] mx-auto;
+}
+
+.empty-list {
+  @apply w-full h-[200px] text-zinc-500 flex items-center justify-center;
+}
