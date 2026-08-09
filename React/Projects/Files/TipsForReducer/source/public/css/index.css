@@ -1,0 +1,40 @@
+@import "tailwindcss";
+@import url("./../public/css/fonts");
+
+@theme {
+  --font-IRANSansX: "IRANSansX";
+
+  --breakpoint-*: initial;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+}
+
+body {
+  @apply font-IRANSansX! min-h-dvh overflow-x-hidden bg-[#f1f1f1];
+}
+
+@utility flex-ic {
+  @apply flex items-center;
+}
+
+@utility flex-center {
+  @apply flex items-center justify-center;
+}
+
+@utility flex-between {
+  @apply flex-ic justify-between;
+}
+
+@utility container {
+  @apply w-[90%] md:w-full mx-auto;
+}
+
+::placeholder {
+  @apply text-xs! text-neutral-400!;
+}
+
+select {
+  @apply border-l-8! border-white ring ring-gray-200
+}

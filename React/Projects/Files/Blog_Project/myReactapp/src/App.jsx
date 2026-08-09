@@ -29,7 +29,7 @@ function App() {
         </div>
       </main>
       <footer></footer>
-      <div id="bg-blur"></div>
+      <div id="bg-bolor"></div>
     </section>
   );
 }
