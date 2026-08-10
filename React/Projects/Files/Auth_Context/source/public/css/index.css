@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+@theme {
+  --font-IRANSansX: "IRANSansX";
+}
+
+@utility primary-border-color {
+  @apply border-zinc-200;
+}
+
+@utility primary-bg {
+  @apply bg-gradient-to-t cursor-pointer duration-150  hover:opacity-90 transition-all text-white rounded-md focus-within:ring-2 focus-within:ring-teal-500/60 from-[#019d79] to-[#00bf8f]  border border-[#1bd1a7];
+}
+
+@utility flex-center {
+  @apply flex items-center justify-center;
+}
+
+body {
+  @apply overflow-x-hidden! font-IRANSansX;
+}
+
+.pagination-button {
+  @apply cursor-pointer min-w-[32px] h-8 px-2 text-sm font-medium transition-all duration-200 rounded-md;
+}
+
+.active-tab {
+  @apply bg-black/10 text-black shadow-sm cursor-pointer;
+}
+
+.not-active-tab {
+  @apply text-gray-400 hover:text-black hover:bg-black/5;
+}
+
+.pagination {
+  @apply flex justify-center border-t p-4 primary-border-color items-center gap-1 *:cursor-pointer mt-8;
+}
+
+.pagination-prev-button {
+  @apply h-8 px-3 text-sm font-medium rounded-md transition-all duration-200;
+}
+
+.pagination-next-button {
+  @apply h-8 px-3 text-sm font-medium  rounded-md transition-all duration-200;
+}
+
+.pages-ended {
+  @apply opacity-30 cursor-not-allowed hover:bg-transparent hover:text-gray-400;
+}
+
+.badge {
+  @apply text-xs flex-center gap-1 px-1 py-0.5 rounded-md border max-w-max cursor-pointer select-none hover:opacity-80 max-h-max;
+
+  &.success-badge {
+    @apply text-green-500 bg-green-500/10;
+  }
+
+  &.danger-badge {
+    @apply bg-red-500/10 text-red-500;
+  }
+}
+
+
+.link-text {
+  @apply text-blue-500 cursor-pointer text-sm underline underline-offset-1
+}
+
+
+::-webkit-scrollbar {
+  @apply rounded-full overflow-hidden!;
+  width: 0px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 0;
+  background: #eeeeee;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 0;
+  @apply bg-teal-500/40
+}
+
+ ::-webkit-scrollbar-thumb:horizontal{
+        background: red;
+        border-radius: 1px;
+ }
