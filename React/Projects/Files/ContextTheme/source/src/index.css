@@ -1,0 +1,11 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+
+body {
+    @apply py-20 w-3xl mx-auto bg-zinc-50 dark:bg-zinc-900 font-serif!
+}
+
+html.dark {
+    @apply bg-zinc-900 text-white
+}
